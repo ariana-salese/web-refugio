@@ -1,0 +1,435 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab:wght@600&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+/* background */
+.bgDarkGreen{
+    background-color: #466e35;
+}
+
+.bgDarkGreen--op8{
+    background-color: #466e35bf;
+}
+
+.bgGreen{
+    background-color: #b9d8ab;
+}
+
+.bgLightGreen{
+    background-color: #d5e0ce;
+}
+
+.bgGrey{
+    background-color: rgb(243, 241, 241);
+}
+
+.gradientGreen {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(213,224,206,1) 100%);
+}
+
+
+#participar, #nosotros, #contacto{
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* textos */
+.titulo--xl{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color:#fff;
+    text-shadow: rgba(0, 0, 0, 0.344) 3px 2px 2px;
+}
+
+.titulo{
+    color: #fff; 
+    width: 100%;
+    margin-bottom: 1%; 
+    padding-top: 3px;
+    padding-bottom: 3px;
+    /* background-color: #466e35; */
+}
+
+.textoDestacado{
+    font-size: 3rem;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+a{
+    color:#000;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#000;
+}
+
+/* navbar */
+
+.navbar-brand{
+    height: 8vh;
+}
+    .navbar-brand h2{
+        font-weight: bold;
+        color: #d5e0ce;
+        margin: 0;
+    }
+
+    .navbar-brand img{
+        height: inherit;
+        padding: 1vh;
+    }
+
+#links-nav .nav-link, .dropdown-item{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #d5e0ce;
+    align-items: center;
+
+    /* Animacion subrrayado */
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    }
+
+#links-nav .nav-link:hover, .dropdown-item:hover{
+    color: #fff;
+
+    /* Animacion subrrayado */
+    background-size: 100% 2px;
+}
+
+.dropdown-menu{ 
+    background-color: #466e35;
+}
+
+.dropdown-item{
+    color: #d5e0ce;
+    font-size: 1.3rem;
+}
+
+.dropdown-item:hover{
+    background-color: #466e35;
+}
+
+/* .divisor{
+    width: 100%;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right,#b9d8ab, #466e35 , #b9d8ab) 1 0 0 0;
+    animation: lineAnim 1.5s linear;
+} */
+
+/* galeria */
+.galeria__figura:hover{
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+
+.galeria__figcaption{
+    font-size: 1.5rem;
+}
+
+/* TODO sirve? */
+/* .galeria__img{
+    width: 200px;
+    height: 200px;
+} */
+
+.galeria__img{
+    width: 16rem;
+    height: 16rem;
+}
+
+/* carusel */
+#carusel .carusel__img{
+    width: 20rem;
+    margin: 2%;
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
+}
+
+.carousel-indicators{
+    position: static;
+}
+
+.carousel .carousel-indicators button{ /* clases de bootstrap */
+    background-color: #466e35;
+} 
+
+/* botones */
+.carusel__btn{
+    /* font */
+    font-size: 1.2rem;
+    color: #fff;
+    /* background */
+    background-color: #466e35;
+    /* box model */
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 1rem;
+    padding: 1vh 2vh;
+    /* borde y sombra */
+    border: 2px solid #466e35;
+    box-shadow: rgba(0, 0, 0, 0.42) 6px 5px 14px -2px;
+    border-radius: 1rem;
+    /* animacion */
+    transition : 1000ms;
+    transform: translateY(0);
+}
+
+.carusel__btn:hover{
+    /* font */
+    color: #466e35;
+    /* background */
+    background-color: #d5e0ce;
+    /* box model */
+    padding: 1vh 4vh;
+    /* borde */
+    border: solid 2px #466e35;
+    /* animacion */
+    transition : 1000ms;
+}
+
+/* informacion */
+.informacion{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.informacion__article{
+    /* margin: 10px; */
+    /* width: 70%; */
+    
+    /* align-items: center;
+    display: flex; */
+}
+
+.informacion__img{
+    width: 20rem;
+    height: 20rem;
+    /* margin: 1.3rem; */
+}
+
+/* formulario */
+.formulario--w15{
+    width: 15%;
+}
+
+.formulario,
+.formulario--w15{
+    padding-bottom: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.formulario__label{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.formulario__select{
+    width: fit-content;
+}
+
+.formulario__input{
+    margin: 10px;
+    width: 30%;
+}
+
+.formulario__mensaje{
+    width: 60%;
+}
+
+/******************* NOSOTROS ******************/
+.estadisticas{
+    display: flex;    
+    justify-content: center;
+}
+
+.estadisticas__article{
+    padding: 40px;
+
+    display: flex;   
+    flex-direction: column; 
+    align-items: center;
+}
+
+/******************* ADOPTAR ******************/
+.requisitos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.requisitos__article{
+    width: 40%;
+    padding: 20px 20px 10px 20px;
+}
+
+.requisitos__title,
+.requisitos__text{
+    padding-bottom: 30px;
+}
+
+.requisitos__list{
+    list-style: disc inside url('../img/tick.png');
+}
+
+    .requisitos__list li{
+        text-align: start;
+        font-size: 1.5rem;
+    }
+
+.requisitos__img{
+    width: 300px;
+    height: 300px;
+}
+
+.buscador{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalogo{
+    width: 70%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalogo__figure{
+    background-color: rgba(255, 255, 255, 0.471);
+
+    border-radius: 10px;
+
+    padding: 20px;
+    margin: 20px;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.catalogo__img{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.catalogo_figcaption{
+    font-size: 1.7rem;
+}
+
+.indice{
+    width: 15%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.indice_img{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+.indice_figcaption{
+    font-size: 1.4rem;
+}
+
+/******************* CONTACTO ******************/
+.denuncia {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.denuncia__img{
+    width: 200px;  
+    height: 200px; 
+}
+/***********************************************/
+
+/* footer */
+.pie__img{
+        width: 2.5rem;
+        border-radius: 100%;
+        transition: all 0.5s;
+    }
+
+.pie__img:hover{
+    transition: all 0.5s;
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
+}
+
+.pie__link{
+    font-size: 1.4rem;
+    color: #d5e0ce;
+}
+
+.pie__link:hover{
+    color: #fff;
+}
+
+.pie__titulo{
+    font-weight: bold;
+    color: #d5e0ce;
+}
+    
+
+/* ANIMACIONES */
+
+/* @keyframes lineAnim {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+} */
+
+/* BREAKPOINTS */
+
+@media screen and (max-width: 890px){
+    .galeria{
+        flex-direction: column;
+    }
+}

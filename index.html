@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+
+<html lang='es'>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <title>Refugio patitas</title>
+
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- inicia nav -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bgDarkGreen" id="nav">
+			<div class="container-fluid">
+				<!-- logo -->
+                <a href="index.html" class="navbar-brand d-flex align-items-center" id="logo-nav">
+                    <img src=img/logo_claro.png alt="Logo adopcion">
+                    <h2>Refugio Patitas</h2>
+                </a>
+				<!-- boton hamburguesa -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                	<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- links nav -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                	<ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" id="links-nav"> 
+                  		<li class="nav-item">
+                    		<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  		</li>
+                  		<li class="nav-item">
+                    		<a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+                  		</li>
+                  		<li class="nav-item">
+                    		<a class="nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
+                  		</li>
+                  		<li class="nav-item dropdown">
+                    		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Participar</a>
+                    		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      			<li><a class="dropdown-item" href="participar.html">Transitar</a></li>
+                      			<li><a class="dropdown-item" href="participar.html">Ingresar Mascota</a></li>
+                      			<li><a class="dropdown-item" href="participar.html">Donar</a></li>
+                    		</ul>
+                		</li>
+                		<li class="nav-item">
+                    		<a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                  		</li>
+                	</ul>
+              	</div>
+            </div>
+        </nav>
+        <!-- termina nav -->
+
+		<!-- inicia header -->
+        <header class="bgLightGreen">
+            <section class="p-3">
+                <h1 class="textoDestacado">Nuestros compañeros perfectos nunca tienen menos de cuatro patas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloribus quia sit deserunt natus nobis esse nihil placeat veniam nulla modi quae, eius ullam velit doloremque commodi in molestiae ipsum?</p>
+            </section>
+            <img class="w-100" src="img/fonco_inicio_posta.png" alt="imagen de perritos"> 
+        </header>
+        <!-- termina header -->
+
+		 <!-- inicia main -->
+		<main>
+
+			<!-- inicia adopcion -->
+			<section id="carouselExampleIndicators" data-bs-interval="5000" class="carousel slide bgLightGreen" data-bs-ride="carousel" >
+				<!-- titulo -->
+				<section class="d-flex flex-column align-content-center">
+					<h1 class="titulo bgDarkGreen--op8">¿Querés adoptar?</h1>
+				</section>
+				<!-- carusel -->
+				<div class="carousel-inner" id="carusel">
+					<!-- slide 1 carusel -->
+				  	<div class="carousel-item active"> <!-- 1000 = 1 second data-bs-interval="8000" -->
+						<div class="d-flex align-items-center justify-content-center row">
+							<img src="img/thor.png" class="d-block col-lg-4 carusel__img" alt="TODO">
+							<article class="col-lg-8 pe-xl-5">
+								<h2><strong>Thor</strong></h2> 
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat sapiente recusandae neque consectetur sed expedita nam optio nihil, assumenda.</p>
+								<!-- boton -->
+								<form action="adoptar.html">
+									<input class="carusel__btn" type="submit" value="Ver más">
+								</form>
+							</article>
+						</div>
+				  	</div>
+					<!-- slide 2 carusel -->
+				  	<div class="carousel-item">
+						<div class="d-flex align-items-center justify-content-center row">
+							<img src="img/loki.png" class="d-block col-lg-4 carusel__img" alt="TODO">
+							<article class="col-lg-8 pe-xl-5">
+								<h2><strong>Loki</strong></h2> 
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat sapiente recusandae neque consectetur sed expedita nam optio nihil, assumenda.</p>
+								<!-- boton -->
+								<form action="adoptar.html">
+									<input class="carusel__btn" type="submit" value="Ver más">
+								</form>
+							</article>
+						</div>
+				  	</div>
+					<!-- slide 3 carusel -->
+				  	<div class="carousel-item">
+						<div class="d-flex align-items-center justify-content-center row">
+							<img src="img/milo.png" class="d-block col-lg-4 carusel__img" alt="TODO">
+							<article class="col-lg-8 pe-xl-5">
+								<h2><strong>Milo</strong></h2> 
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat sapiente recusandae neque consectetur sed expedita nam optio nihil, assumenda.</p>
+								<!-- boton -->
+								<form action="adoptar.html">
+									<input class="carusel__btn" type="submit" value="Ver más">
+								</form>
+							</article>
+						</div>
+				  	</div>
+				</div>
+				<!-- idicador de slide -->
+				<div class="carousel-indicators carusel__indicador m-0">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  	</div>
+			</section>
+			<!-- termina adopcion -->
+			
+			<!-- inicia participacion -->
+			<section class="d-flex flex-column align-items-center">
+				<h1 class="titulo bgDarkGreen--op8">¿Cómo participar?</h1>
+				<section class="d-flex justify-content-center galeria">
+					<a href="participar.html#transitar" class="m-1 m-lg-4">
+						<figure class="galeria__figura">
+							<img class="galeria__img" src="img/transitar.png" alt="Transitar">
+							<figcaption class="galeria__figcaption">Transitar</figcaption>
+						</figure>
+					</a>
+					<a href="participar.html#ingresar_mascota" class="m-1 m-lg-4">
+						<figure class="galeria__figura">
+							<img class="galeria__img" src="img/ingresar_mascota.png" alt="Ingresar mascota">
+							<figcaption class="galeria__figcaption">Ingresar mascota</figcaption>
+						</figure>
+					</a>
+					<a href="participar.html#donar" class="m-1 m-lg-4">
+						<figure class="galeria__figura">
+							<img class="galeria__img" src="img/donar.png" alt="Donar">
+							<figcaption class="galeria__figcaption">Donar</figcaption>
+						</figure>
+					</a>
+				</section>
+				<form action="participar.html">
+					<input class="carusel__btn" type="submit" value="Conocé más">
+				</form>
+			</section>
+			<!-- termina participacion -->
+		</main>
+		<!-- termina main -->
+
+		<!-- inicia footer -->
+		<footer class = "d-flex flex-column align-items-center bgDarkGreen py-3">
+			<h3 class="pie__titulo">Conecta con nosotros</h3>
+			<section>
+				<a href="#"> <!-- aca irian los link a las redes -->
+					<img src="img/instagram.png" alt="Seguinos en instagram" class="pie__img m-3">
+				</a>
+				<a href="#">
+					<img src="img/facebook.png" alt="Seguinos en facebook" class="pie__img m-3">
+				</a>
+				<a href="#">
+					<img src="img/twitter.png" alt="Seguinos en twitter" class="pie__img m-3">
+				</a>
+				<a href="#">
+					<img src="img/youtube.png" alt="Suscribite a youtube" class="pie__img m-3">
+				</a>  
+			</section>
+			<a href="contacto.html" class="pie__link">Contacto</a>
+		</footer>
+		<!-- termina footer -->
+
+        <!-- Bootstrap: JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+
+</html>
