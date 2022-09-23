@@ -62,7 +62,7 @@
         <!-- inicia header -->
         <header>
             <section>
-                <h1 class="titulo--xl bgDarkGreen--op8 pt-2 m-0">NOSOTROS</h1>
+                <h1 class="titulo--xl bgDarkGreen pt-2 m-0">NOSOTROS</h1>
             </section> 
         </header>
         <!-- termina header -->
@@ -88,46 +88,69 @@
             </section>
             <!-- termina historia y mision -->
 
-            <section class="galeria">
-               <h1 class="title bgDarkGreen">¡Familias felices!</h1>
-               <section class="galeria__section">
-                   <figure class="galeria__figure">
-                        <img class="galeria__img" src="img/familia1.png" alt="familia Lotito">
+            <!-- inicia galeria familias -->
+            <section class="bgLightGreen">
+               <h1 class="titulo bgDarkGreen--op8">¡Familias felices!</h1>
+               <section class="d-flex justify-content-around row">
+                   <figure class="py-3 col-sm-12 col-md-6 col-xl-3"> 
+                        <div class="wrapper__img d-inline-block">
+                            <img class="galeria__img" src="img/familia_diaz.png" alt="familia Diaz">
+                            <div class="contenedor__img__description d-flex justify-content-center align-items-center">
+                                <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
                         <figcaption class="galeria__figcaption">Diaz</figcaption>
                     </figure>
-                    <figure class="galeria__figure">
-                        <img class="galeria__img" src="img/familia2.png" alt="familia Lotito">
+                    <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
+                        <div class="wrapper__img d-inline-block">
+                            <img class="galeria__img" src="img/familia_lotito.png" alt="familia Lotito">
+                            <div class="contenedor__img__description d-flex justify-content-center align-items-center">
+                                <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
                         <figcaption class="galeria__figcaption">Lotito</figcaption>
                     </figure>
-                    <figure class="galeria__figure">
-                        <img class="galeria__img" src="img/familia3.png" alt="familia Halac">
+                    <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
+                        <div class="wrapper__img d-inline-block">
+                            <img class="galeria__img" src="img/familia_halac.png" alt="familia Halac">
+                            <div class="contenedor__img__description d-flex justify-content-center align-items-center">
+                                <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
                         <figcaption class="galeria__figcaption">Halac</figcaption>
                     </figure>
-                    <figure class="galeria__figure">
-                        <img class="galeria__img" src="img/familia4.png" alt="familia Perez">
-                        <figcaption class="galeria__figcaption">Perez</figcaption>
-                    </figure>
-                    <figure class="galeria__figure">
-                        <img class="galeria__img" src="img/familia5.png" alt="familia Vega">
+                    <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
+                        <div class="wrapper__img d-inline-block">
+                            <img class="galeria__img" src="img/familia_vega.png" alt="familia Vega">
+                            <div class="contenedor__img__description d-flex justify-content-center align-items-center">
+                                <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
                         <figcaption class="galeria__figcaption">Vega</figcaption>
                     </figure>
                 </section>
             </section>
+            <!-- termina galeria familias -->
 
-            <section class="estadisticas bgLightGreen">
-                <article class="estadisticas__article">
+            <!-- inicio estadisticas -->
+            <section class="divisor bgGrey d-flex justify-content-center row">
+                <article class="col m-5">
+                    <img class="estadisticas_icono" src="img/icono_transitos.svg" alt="transitos realizados">
                     <h1>Transitos realizados</h1>
-                    <h1>+130</h1>
+                    <h1 class="contador" id="contador_transitos_realizados">0</h1>
                 </article>
-                <article class="estadisticas__article">
+                <article class="col m-5">
+                    <img class="estadisticas_icono" src="img/icono_adoptar.svg" alt="mascotas adoptadas">
                     <h1>Mascotas adoptadas</h1>
-                    <h1>+150</h1>
+                    <h1 class="contador" id="contador_adopciones">0</h1>
                 </article>
-                <article class="estadisticas__article">
+                <article class="col m-5">
+                    <img class="estadisticas_icono" src="img/icono_donar.svg" alt="donaciones recibidas">
                     <h1>Donaciones recibidas</h1>
-                    <h1>+1000</h1>
+                    <h1 class="contador" id="contador_donaciones">0</h1>
                 </article>
             </section>
+            <!-- fin estadisticas -->
 
         </main>
         <!-- termina main -->
@@ -155,6 +178,7 @@
 
         <!-- Bootstrap: JavaScript Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="animacion_contador.js"></script>
 
     </body>
 </html>

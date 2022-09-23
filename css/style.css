@@ -39,7 +39,6 @@ body {
     background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(213,224,206,1) 100%);
 }
 
-
 #participar, #nosotros, #contacto{
     background-image: url("../img/background.png");
     background-size: cover;
@@ -52,6 +51,7 @@ body {
     font-size: 2.5rem;
     color:#fff;
     text-shadow: rgba(0, 0, 0, 0.344) 3px 2px 2px;
+    border-top:2px solid #d5e0ce;
 }
 
 .titulo{
@@ -92,8 +92,13 @@ a:hover{
     color:#000;
 }
 
-/* navbar */
+/* divisores */
 
+.divisor{
+    border-top: 2px solid #466e35;
+}
+
+/* navbar */
 .navbar-brand{
     height: 8vh;
 }
@@ -142,13 +147,22 @@ a:hover{
     background-color: #466e35;
 }
 
-/* .divisor{
-    width: 100%;
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient(to right,#b9d8ab, #466e35 , #b9d8ab) 1 0 0 0;
-    animation: lineAnim 1.5s linear;
-} */
+/* header */
+.inicio__contenedor{
+    position: relative;
+}
+
+.inicio__texto{
+    color: #fff;
+    height: 100%;
+}
+
+.inicio__contenedor{
+    background-image: url("../img/fondo_perro_acompaniado.png");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
 
 /* galeria */
 .galeria__figura:hover{
@@ -160,15 +174,43 @@ a:hover{
     font-size: 1.5rem;
 }
 
-/* TODO sirve? */
-/* .galeria__img{
-    width: 200px;
-    height: 200px;
-} */
-
-.galeria__img{
+.galeria__img, .galeria__icono{
     width: 16rem;
     height: 16rem;
+}
+
+.galeria__img{
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
+    border-radius: 3.3rem;
+}
+
+.wrapper__img {
+    position: relative;
+}
+
+.contenedor__img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 3.3rem;
+    height: 16rem;
+    width: 16rem;
+    background-color: rgba(0, 0, 0, 0.441);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s, visibility .8s;
+}
+  
+.wrapper__img:hover .contenedor__img__description, .wrapper__img:active .contenedor__img__description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__description{
+    width: inherit;
 }
 
 /* carusel */
@@ -221,24 +263,9 @@ a:hover{
 }
 
 /* informacion */
-.informacion{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-}
-
-.informacion__article{
-    /* margin: 10px; */
-    /* width: 70%; */
-    
-    /* align-items: center;
-    display: flex; */
-}
-
 .informacion__img{
     width: 20rem;
     height: 20rem;
-    /* margin: 1.3rem; */
 }
 
 /* formulario */
@@ -275,17 +302,9 @@ a:hover{
 }
 
 /******************* NOSOTROS ******************/
-.estadisticas{
-    display: flex;    
-    justify-content: center;
-}
 
-.estadisticas__article{
-    padding: 40px;
-
-    display: flex;   
-    flex-direction: column; 
-    align-items: center;
+.estadisticas_icono{
+    width: 5rem;
 }
 
 /******************* ADOPTAR ******************/
@@ -414,17 +433,7 @@ a:hover{
 
 /* ANIMACIONES */
 
-/* @keyframes lineAnim {
-    0% {
-        width: 0%;
-    }
-    50% {
-        width: 50%;
-    }
-    100% {
-        width: 100%;
-    }
-} */
+
 
 /* BREAKPOINTS */
 
