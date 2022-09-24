@@ -5,90 +5,111 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
         <title>Refugio patitas</title>
+
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
         <link rel="stylesheet" href="css/style.css">
     </head>
 
+
     <body>
         <!-- inicia nav -->
-        <nav class="bgGreen">
-            <a href="index.html">
-                <img src=img/logo.png alt="Logo adopcion">
-            </a>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="adoptar.html">Adoptar</a>
-                </li>
-                <li>
-                    <a href="participar.html">Participar</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg--verde_oscuro" id="nav">
+			<div class="container-fluid">
+				<!-- logo -->
+                <a href="index.html" class="navbar-brand d-flex align-items-center" id="logo-nav">
+                    <img src=img/logo_claro.png alt="Logo adopcion">
+                    <h2>Refugio Patitas</h2>
+                </a>
+				<!-- boton hamburguesa -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                	<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- links nav -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                	<ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" id="links-nav"> 
+                  		<li class="nav-item">
+                    		<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  		</li>
+                  		<li class="nav-item">
+                    		<a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+                  		</li>
+                  		<li class="nav-item">
+                    		<a class="nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
+                  		</li>
+                  		<li class="nav-item dropdown">
+                    		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
+                    		<ul class="dropdown-menu bg--verde_oscuro" aria-labelledby="navbarDropdown">
+                      			<li><a class="dropdown-item" href="participar.html">Transitar</a></li>
+                      			<li><a class="dropdown-item" href="participar.html#transitar">Ingresar Mascota</a></li>
+                      			<li><a class="dropdown-item" href="participar.html#donar">Donar</a></li>
+                    		</ul>
+                		</li>
+                		<li class="nav-item">
+                    		<a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                  		</li>
+                	</ul>
+              	</div>
+            </div>
         </nav>
         <!-- termina nav -->
 
         <!-- inicia header -->
-        <header class="bgLightGreen">
-            <section>
-                <h1 class="mainTitle">CONTACTO</h1>
-            </section> 
+        <header>
+            <h1 class="titulo--xl bg--verde_oscuro pt-2 m-0">CONTACTO</h1>
         </header>
         <!-- termina header -->
 
         <!-- inicia main -->
-        <main id="contacto">
-            <section class="denuncia bgGrey">
-                <img class="denuncia__img" src="img/denunciar_izq.png">
-                <article>
+        <main class="bg--patitas">
+            <section class="bg--blanco d-flex justify-content-center">
+                <img class="img--md m-5" src="img/denunciar_izq.png">
+                <article class="m-5">
                     <h1>¡Denuncia!</h1>
                     <h1>Maltrato animal</h1>
                     <button class="btn">Denunciar</button>
                 </article>
-                <img class="denuncia__img" src="img/denunciar_der.png">
+                <img class="img--md m-5" src="img/denunciar_der.png">
             </section>
 
-            <section class="galeria bgLightGreen">
-                <h1 class="title bgDarkGreen">Conecta con nosotros</h1>
-                <section class="galeria__section">
-                    <figure class="galeria__figure">
-                        <img class="galeria__img--sm" src="img/instagram.png" alt="Seguinos en instagram">
-                        <figcaption class="galeria__figcaption"><a href="#">Instagram</a></figcaption>
-                    </figure>
-                    <figure class="galeria__figure">
-                        <img class="galeria__img--sm" src="img/facebook.png" alt="Seguinos en Facebook">
-                        <figcaption class="galeria__figcaption"><a href="#">Facebook</a></figcaption>
-                    </figure>
-                    <figure class="galeria__figure">
-                        <img class="galeria__img--sm" src="img/twitter.png" alt="Seguinos en Twitter">
-                        <figcaption class="galeria__figcaption"><a href="#">Twitter</a></figcaption>
-                    </figure>
-                    <figure class="galeria__figure">
-                        <img class="galeria__img--sm" src="img/youtube.png" alt="Seguinos en Youtube">
-                        <figcaption class="galeria__figcaption"><a href="#">Youtube</a></figcaption>
-                    </figure>
+            <section class="bg--verde_claro">
+                <h1 class="titulo bg--verde_oscuro--trasparente m-0">Conecta con nosotros</h1>
+                <section class="py-4 d-flex justify-content-center">
+                    <article class="mx-4">
+                        <img class="img--sm" src="img/instagram_oscuro.png" alt="Seguinos en instagram">
+                        <h3 class=""><a href="#">Instagram</a></h3>
+                    </article>
+                    <article class="mx-4">
+                        <img class="img--sm" src="img/facebook_oscuro.png" alt="Seguinos en Facebook">
+                        <h3 class=""><a href="#">Facebook</a></h3>
+                    </article>
+                    <article class="mx-4">
+                        <img class="img--sm" src="img/twitter_oscuro.png" alt="Seguinos en Twitter">
+                        <h3 class=""><a href="#">Twitter</a></h3>
+                    </article>
+                    <article class="mx-4">
+                        <img class="img--sm" src="img/youtube_oscuro.png" alt="Seguinos en Youtube">
+                        <h3 class=""><a href="#">Youtube</a></h3>
+                    </article>
                 </section>
             </section>
 
-            <section class="mensaje">
-                <h1 class="title bgDarkGreen">Envianos un mensaje</h1>
-                <form class="formulario" id="contacto">
-                    <label class="formulario__label" for="name">Nombre:</label>
-                    <input class="formulario__input" type="text" id="name">
-                    <label class="formulario__label" for="mail">Email:</label>
-                    <input class="formulario__input" type="email" id="mail">
-                    <label class="formulario__label" for="tel">Telefono</label>
-                    <input class="formulario__input" type="tel" id="tel">
-                    <label class="formulario__label" for="text">Mensaje</label>
-                    <textarea class="formulario__mensaje" name="" id="mensaje" cols="30" rows="10"></textarea>
+            <section class="">
+                <h1 class="titulo bg--verde_oscuro--trasparente m-0">Envianos un mensaje</h1>
+                <form class="d-flex flex-column align-items-center my-3" id="contacto">
+                    <label class="texto--sm" for="name">Nombre:</label>
+                    <input class="mb-3 w-25" type="text" id="name">
+                    <label class="texto--sm" for="mail">Email:</label>
+                    <input class="mb-3 w-25" type="email" id="mail">
+                    <label class="texto--sm" for="tel">Telefono</label>
+                    <input class="mb-3 w-25" type="tel" id="tel">
+                    <label class="texto--sm" for="text">Mensaje</label>
+                    <textarea class="mb-3  w-25" name="" id="mensaje" cols="30" rows="10"></textarea>
                     <input class="btn" type="submit" value="Enviar">
                 </form>
             </section>
@@ -96,25 +117,28 @@
         <!-- termina main -->
 
         <!-- inicia footer -->
-        <footer>
-            <h3>Conecta con nosotros</h3>
-            <section>
-                <a href=""> <!-- aca irian los link a las redes -->
-                    <img src="img/instagram.png" alt="instagram">
-                </a>
-                <a href="">
-                    <img href="" src="img/facebook.png" alt="facebook">
-                </a>
-                <a href="">
-                    <img href="" src="img/twitter.png" alt="twitter">
-                </a>
-                <a href="">
-                    <img href="" src="img/youtube.png" alt="youtube">
-                </a>  
-            </section>
-            <a href="contacto.html" >Contacto</a>
-        </footer>
-        <!-- termina footer -->
+		<footer class = "d-flex flex-column align-items-center bg--verde_oscuro py-3">
+			<h3 class="pie__titulo">Conecta con nosotros</h3>
+			<section>
+				<a href="#"> <!-- aca irian los link a las redes -->
+					<img src="img/instagram.png" alt="Seguinos en instagram" class="pie__img m-3">
+				</a>
+				<a href="#">
+					<img src="img/facebook.png" alt="Seguinos en facebook" class="pie__img m-3">
+				</a>
+				<a href="#">
+					<img src="img/twitter.png" alt="Seguinos en twitter" class="pie__img m-3">
+				</a>
+				<a href="#">
+					<img src="img/youtube.png" alt="Suscribite a youtube" class="pie__img m-3">
+				</a>  
+			</section>
+			<a href="contacto.html" class="pie__link">Contacto</a>
+		</footer>
+		<!-- termina footer -->
+
+        <!-- Bootstrap: JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
     </body>
 

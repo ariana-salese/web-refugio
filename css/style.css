@@ -15,31 +15,27 @@ body {
 }
 
 /* background */
-.bgDarkGreen{
+.bg--verde_oscuro{
     background-color: #466e35;
 }
 
-.bgDarkGreen--op8{
+.bg--verde_oscuro--trasparente{
     background-color: #466e35bf;
 }
 
-.bgGreen{
-    background-color: #b9d8ab;
-}
-
-.bgLightGreen{
+.bg--verde_claro{
     background-color: #d5e0ce;
 }
 
-.bgGrey{
-    background-color: rgb(243, 241, 241);
+.bg--gris{
+    background-color: #eaeaea;
 }
 
-.gradientGreen {
-    background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(213,224,206,1) 100%);
+.bg--blanco{
+    background-color: #fff;
 }
 
-#participar, #nosotros, #contacto{
+.bg--patitas{
     background-image: url("../img/background.png");
     background-size: cover;
     background-attachment: fixed;
@@ -60,7 +56,6 @@ body {
     margin-bottom: 1%; 
     padding-top: 3px;
     padding-bottom: 3px;
-    /* background-color: #466e35; */
 }
 
 .textoDestacado{
@@ -79,6 +74,10 @@ h3{
     font-size: 1.5rem;
 }
 
+h4{
+    font-size: 1.2rem;
+}
+
 p{
     font-size: 1.3rem;
 }
@@ -90,6 +89,10 @@ a{
 
 a:hover{
     color:#000;
+}
+
+.texto--sm{
+    font-size: 1.2rem;
 }
 
 /* divisores */
@@ -132,10 +135,6 @@ a:hover{
 
     /* Animacion subrrayado */
     background-size: 100% 2px;
-}
-
-.dropdown-menu{ 
-    background-color: #466e35;
 }
 
 .dropdown-item{
@@ -189,16 +188,21 @@ a:hover{
 }
 
 .contenedor__img__description {
+    /* font */
+    color: #fff;
+    /* posicion */
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    border-radius: 3.3rem;
+    /* box modelo */
     height: 16rem;
     width: 16rem;
+    /* background y bordes */
     background-color: rgba(0, 0, 0, 0.441);
-    color: #fff;
+    border-radius: 3.3rem;
+    /* animacion */
     visibility: hidden;
     opacity: 0;
     transition: opacity .6s, visibility .8s;
@@ -217,6 +221,7 @@ a:hover{
 #carusel .carusel__img{
     width: 20rem;
     margin: 2%;
+    border-radius: 3.3rem;
     filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
 }
 
@@ -224,12 +229,12 @@ a:hover{
     position: static;
 }
 
-.carousel .carousel-indicators button{ /* clases de bootstrap */
-    background-color: #466e35;
+.carousel .carousel-indicators button{ 
+    background-color: #3a5b2c;
 } 
 
 /* botones */
-.carusel__btn{
+.btn, .busqueda__btn{
     /* font */
     font-size: 1.2rem;
     color: #fff;
@@ -249,7 +254,7 @@ a:hover{
     transform: translateY(0);
 }
 
-.carusel__btn:hover{
+.btn:hover{
     /* font */
     color: #466e35;
     /* background */
@@ -262,18 +267,40 @@ a:hover{
     transition : 1000ms;
 }
 
-/* informacion */
-.informacion__img{
+.busqueda__btn:hover{
+    background-color: #fff;
+    transition : 1000ms;
+    color: #466e35;
+}
+
+/* imagenes */
+.img--xs{
+    width: 2rem;
+    height: 2rem;
+}
+
+.img--sm{
+    width: 5rem;
+}
+
+.img--md{
+    width: 10rem;
+    height: 10rem;
+}
+
+.img--lg{
     width: 20rem;
-    height: 20rem;
 }
 
+.img--xl{
+    width: 25rem;
+}
 /* formulario */
-.formulario--w15{
+/* .formulario--w15{
     width: 15%;
-}
+} */
 
-.formulario,
+/* .formulario,
 .formulario--w15{
     padding-bottom: 20px;
     
@@ -299,78 +326,78 @@ a:hover{
 
 .formulario__mensaje{
     width: 60%;
-}
+} */
 
 /******************* NOSOTROS ******************/
 
-.estadisticas_icono{
-    width: 5rem;
-}
+/* TODO borrar? */
 
 /******************* ADOPTAR ******************/
-.requisitos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.requisitos__article{
-    width: 40%;
-    padding: 20px 20px 10px 20px;
-}
-
-.requisitos__title,
-.requisitos__text{
-    padding-bottom: 30px;
-}
-
-.requisitos__list{
+.lista--tick{
     list-style: disc inside url('../img/tick.png');
 }
-
-    .requisitos__list li{
+    .lista--tick li{
         text-align: start;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
-.requisitos__img{
-    width: 300px;
-    height: 300px;
+.filtros{
+    grid-area: filtros;
+    border-bottom: 2px solid #466e35;
 }
 
-.buscador{
-    display: flex;
-    flex-wrap: wrap;
+.texto--md{
+    font-size: 1.2rem;
 }
 
-.catalogo{
-    width: 70%;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.animales_en_adopcion__filtro{
+    font-size: 1rem;
+    width: 8rem;
 }
 
-.catalogo__figure{
-    background-color: rgba(255, 255, 255, 0.471);
+.galeria_animales{
+    grid-area: galeria_animales;
+}
 
+.animal{
+    width: 18rem;
     border-radius: 10px;
-
-    padding: 20px;
-    margin: 20px;
-    width: fit-content;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.648));
+    transition: scale 1s;
 }
 
-.catalogo__img{
+.animal:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+/* .animal__nombre{
+    
+} */
+
+.animal__detalles{
+    width: 15rem;
+}
+
+.animal__img{
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 15rem;
+    height: 15rem;
 }
 
-.catalogo_figcaption{
-    font-size: 1.7rem;
+.indice_caracteristicas{
+    grid-area: indice_caracteristicas;
+    border-top: 2px solid #466e35;
+}
+
+.contenedor__animales_en_adopcion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "filtros"
+    "galeria_animales"
+    "indice_caracteristicas";
 }
 
 .indice{
@@ -392,16 +419,7 @@ a:hover{
 }
 
 /******************* CONTACTO ******************/
-.denuncia {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
-.denuncia__img{
-    width: 200px;  
-    height: 200px; 
-}
 /***********************************************/
 
 /* footer */
@@ -437,8 +455,18 @@ a:hover{
 
 /* BREAKPOINTS */
 
-@media screen and (max-width: 890px){
-    .galeria{
-        flex-direction: column;
+@media screen and (min-width: 900px){
+    .contenedor__animales_en_adopcion{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "filtros indice_caracteristicas"
+        "galeria_animales indice_caracteristicas"
+        "galeria_animales indice_caracteristicas";
+    }
+
+    .indice_caracteristicas{
+        border-left: 2px solid #466e35;
+        border-top: 0px;
     }
 }

@@ -19,7 +19,7 @@
 
     <body>
         <!-- inicia nav -->
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top bgDarkGreen" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg--verde_oscuro" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
                 <a href="index.html" class="navbar-brand d-flex align-items-center" id="logo-nav">
@@ -43,11 +43,11 @@
                     		<a class="nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
                   		</li>
                   		<li class="nav-item dropdown">
-                    		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Participar</a>
-                    		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
+                    		<ul class="dropdown-menu bg--verde_oscuro" aria-labelledby="navbarDropdown">
                       			<li><a class="dropdown-item" href="participar.html">Transitar</a></li>
-                      			<li><a class="dropdown-item" href="participar.html">Ingresar Mascota</a></li>
-                      			<li><a class="dropdown-item" href="participar.html">Donar</a></li>
+                      			<li><a class="dropdown-item" href="participar.html#transitar">Ingresar Mascota</a></li>
+                      			<li><a class="dropdown-item" href="participar.html#donar">Donar</a></li>
                     		</ul>
                 		</li>
                 		<li class="nav-item">
@@ -61,14 +61,12 @@
 
         <!-- inicia header -->
         <header>
-            <section>
-                <h1 class="titulo--xl bgDarkGreen pt-2 m-0">NOSOTROS</h1>
-            </section> 
+            <h1 class="titulo--xl bg--verde_oscuro pt-2 m-0">NOSOTROS</h1>
         </header>
         <!-- termina header -->
 
         <!-- inicia main -->
-        <main id="nosotros">
+        <main class="bg--patitas">
             <!-- inicia historia y mision -->
             <section class="informacion d-flex flex-column align-items-center">
                 <article class="informacion__article row d-flex justify-content-center align-items-center my-4">
@@ -76,21 +74,21 @@
                         <h1>Historia</h1>
                         <p class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque?</p>
                     </section>
-                    <img class="informacion__img col-md-6" src="img/historia.png">
+                    <img class="img--lg col-md-6" src="img/historia.png">
                 </article>
                 <article class="informacion__article row d-flex justify-content-center align-items-center my-4">
                     <section class="col-md-6 order-md-5">
                         <h1>Misión</h1>
                         <p class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque?</p>
                     </section>
-                    <img class="informacion__img col-sm-6" src="img/mision.png">
+                    <img class="img--lg col-sm-6" src="img/mision.png">
                 </article>
             </section>
             <!-- termina historia y mision -->
 
             <!-- inicia galeria familias -->
-            <section class="bgLightGreen">
-               <h1 class="titulo bgDarkGreen--op8">¡Familias felices!</h1>
+            <section class="bg--verde_claro">
+               <h1 class="titulo bg--verde_oscuro--trasparente">¡Familias felices!</h1>
                <section class="d-flex justify-content-around row">
                    <figure class="py-3 col-sm-12 col-md-6 col-xl-3"> 
                         <div class="wrapper__img d-inline-block">
@@ -133,19 +131,19 @@
             <!-- termina galeria familias -->
 
             <!-- inicio estadisticas -->
-            <section class="divisor bgGrey d-flex justify-content-center row">
+            <section class="divisor bg--blanco d-flex justify-content-center row">
                 <article class="col m-5">
-                    <img class="estadisticas_icono" src="img/icono_transitos.svg" alt="transitos realizados">
+                    <img class="img--sm" src="img/icono_transitos.svg" alt="transitos realizados">
                     <h1>Transitos realizados</h1>
                     <h1 class="contador" id="contador_transitos_realizados">0</h1>
                 </article>
                 <article class="col m-5">
-                    <img class="estadisticas_icono" src="img/icono_adoptar.svg" alt="mascotas adoptadas">
+                    <img class="img--sm" src="img/icono_adoptar.svg" alt="mascotas adoptadas">
                     <h1>Mascotas adoptadas</h1>
                     <h1 class="contador" id="contador_adopciones">0</h1>
                 </article>
                 <article class="col m-5">
-                    <img class="estadisticas_icono" src="img/icono_donar.svg" alt="donaciones recibidas">
+                    <img class="img--sm" src="img/icono_donar.svg" alt="donaciones recibidas">
                     <h1>Donaciones recibidas</h1>
                     <h1 class="contador" id="contador_donaciones">0</h1>
                 </article>
@@ -156,7 +154,7 @@
         <!-- termina main -->
 
         <!-- inicia footer -->
-		<footer class = "d-flex flex-column align-items-center bgDarkGreen py-3">
+		<footer class = "d-flex flex-column align-items-center bg--verde_oscuro py-3">
 			<h3 class="pie__titulo">Conecta con nosotros</h3>
 			<section>
 				<a href="#"> <!-- aca irian los link a las redes -->

@@ -19,7 +19,7 @@
 
     <body>
         <!-- inicia nav -->
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top bgDarkGreen" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg--verde_oscuro" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
                 <a href="index.html" class="navbar-brand d-flex align-items-center" id="logo-nav">
@@ -43,11 +43,11 @@
                     		<a class="nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
                   		</li>
                   		<li class="nav-item dropdown">
-                    		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Participar</a>
-                    		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
+                    		<ul class="dropdown-menu bg--verde_oscuro" aria-labelledby="navbarDropdown">
                       			<li><a class="dropdown-item" href="participar.html">Transitar</a></li>
-                      			<li><a class="dropdown-item" href="participar.html">Ingresar Mascota</a></li>
-                      			<li><a class="dropdown-item" href="participar.html">Donar</a></li>
+                      			<li><a class="dropdown-item" href="participar.html#transitar">Ingresar Mascota</a></li>
+                      			<li><a class="dropdown-item" href="participar.html#donar">Donar</a></li>
                     		</ul>
                 		</li>
                 		<li class="nav-item">
@@ -72,10 +72,10 @@
 		<main>
 
 			<!-- inicia adopcion -->
-			<section id="carouselExampleIndicators" data-bs-interval="5000" class="carousel slide bgLightGreen" data-bs-ride="carousel" >
+			<section id="carouselExampleIndicators" data-bs-interval="5000" class="carousel slide bg--verde_claro" data-bs-ride="carousel" >
 				<!-- titulo -->
 				<section class="d-flex flex-column align-content-center">
-					<h1 class="titulo bgDarkGreen--op8">¿Querés adoptar?</h1>
+					<h1 class="titulo bg--verde_oscuro--trasparente">¿Querés adoptar?</h1>
 				</section>
 				<!-- carusel -->
 				<div class="carousel-inner" id="carusel">
@@ -88,7 +88,7 @@
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat sapiente recusandae neque consectetur sed expedita nam optio nihil, assumenda.</p>
 								<!-- boton -->
 								<form action="adoptar.html">
-									<input class="carusel__btn" type="submit" value="Ver más">
+									<input class="btn" type="submit" value="Ver más">
 								</form>
 							</article>
 						</div>
@@ -102,7 +102,7 @@
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat sapiente recusandae neque consectetur sed expedita nam optio nihil, assumenda.</p>
 								<!-- boton -->
 								<form action="adoptar.html">
-									<input class="carusel__btn" type="submit" value="Ver más">
+									<input class="btn" type="submit" value="Ver más">
 								</form>
 							</article>
 						</div>
@@ -116,14 +116,14 @@
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat sapiente recusandae neque consectetur sed expedita nam optio nihil, assumenda.</p>
 								<!-- boton -->
 								<form action="adoptar.html">
-									<input class="carusel__btn" type="submit" value="Ver más">
+									<input class="btn" type="submit" value="Ver más">
 								</form>
 							</article>
 						</div>
 				  	</div>
 				</div>
 				<!-- idicador de slide -->
-				<div class="carousel-indicators carusel__indicador m-0">
+				<div class="carousel-indicators m-0">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -133,15 +133,15 @@
 			
 			<!-- inicia participacion -->
 			<section class="d-flex flex-column align-items-center">
-				<h1 class="titulo bgDarkGreen--op8">¿Cómo participar?</h1>
+				<h1 class="titulo bg--verde_oscuro--trasparente">¿Cómo participar?</h1>
 				<section class="d-flex justify-content-center galeria">
-					<a href="participar.html#transitar" class="m-1 m-lg-4">
+					<a href="participar.html#" class="m-1 m-lg-4">
 						<figure class="galeria__figura">
 							<img class="galeria__icono" src="img/transitar.png" alt="Transitar">
 							<figcaption class="galeria__figcaption">Transitar</figcaption>
 						</figure>
 					</a>
-					<a href="participar.html#ingresar_mascota" class="m-1 m-lg-4">
+					<a href="participar.html#transitar" class="m-1 m-lg-4">
 						<figure class="galeria__figura">
 							<img class="galeria__icono" src="img/ingresar_mascota.png" alt="Ingresar mascota">
 							<figcaption class="galeria__figcaption">Ingresar mascota</figcaption>
@@ -155,7 +155,7 @@
 					</a>
 				</section>
 				<form action="participar.html">
-					<input class="carusel__btn" type="submit" value="Conocé más">
+					<input class="btn" type="submit" value="Conocé más">
 				</form>
 			</section>
 			<!-- termina participacion -->
@@ -163,7 +163,7 @@
 		<!-- termina main -->
 
 		<!-- inicia footer -->
-		<footer class = "d-flex flex-column align-items-center bgDarkGreen py-3">
+		<footer class = "d-flex flex-column align-items-center bg--verde_oscuro py-3">
 			<h3 class="pie__titulo">Conecta con nosotros</h3>
 			<section>
 				<a href="#"> <!-- link a las redes -->
