@@ -62,7 +62,7 @@
 		<!-- inicia header -->
         <header class="inicio__contenedor">
             <div class="inicio__texto p-3 mx-lg-5 d-flex flex-column align-items-center justify-content-center">
-				<h1 class="textoDestacado">Nuestros compañeros perfectos nunca tienen menos de cuatro patas</h1>
+				<h1 class="texto--destacado">Nuestros compañeros perfectos nunca tienen menos de cuatro patas</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloribus quia sit deserunt natus nobis esse nihil placeat veniam nulla modi quae, eius ullam velit doloremque commodi in molestiae ipsum?</p>
 			</div>
         </header>
@@ -74,15 +74,13 @@
 			<!-- inicia adopcion -->
 			<section id="carouselExampleIndicators" data-bs-interval="5000" class="carousel slide bg--verde_claro" data-bs-ride="carousel" >
 				<!-- titulo -->
-				<section class="d-flex flex-column align-content-center">
-					<h1 class="titulo bg--verde_oscuro--trasparente">¿Querés adoptar?</h1>
-				</section>
+				<h1 class="titulo bg--verde_oscuro--trasparente">¿Querés adoptar?</h1>
 				<!-- carusel -->
-				<div class="carousel-inner" id="carusel">
+				<section class="carousel-inner" id="carusel">
 					<!-- slide 1 carusel -->
-				  	<div class="carousel-item active"> <!-- 1000 = 1 second data-bs-interval="8000" -->
+				  	<article class="carousel-item active"> <!-- 1000 = 1 second data-bs-interval="8000" -->
 						<div class="d-flex align-items-center justify-content-center row">
-							<img src="img/thor.png" class="d-block col-lg-4 carusel__img" alt="TODO">
+							<img src="img/thor.png" class="img--xl contenedor--destacado m-3 d-block col-lg-4" alt="TODO">
 							<article class="col-lg-8 pe-xl-5">
 								<h2><strong>Thor</strong></h2> 
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat sapiente recusandae neque consectetur sed expedita nam optio nihil, assumenda.</p>
@@ -92,11 +90,11 @@
 								</form>
 							</article>
 						</div>
-				  	</div>
+				  	</article>
 					<!-- slide 2 carusel -->
-				  	<div class="carousel-item">
+				  	<article class="carousel-item">
 						<div class="d-flex align-items-center justify-content-center row">
-							<img src="img/loki.png" class="d-block col-lg-4 carusel__img" alt="TODO">
+							<img src="img/loki.png" class="img--xl contenedor--destacado m-3 d-block col-lg-4" alt="TODO">
 							<article class="col-lg-8 pe-xl-5">
 								<h2><strong>Loki</strong></h2> 
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat sapiente recusandae neque consectetur sed expedita nam optio nihil, assumenda.</p>
@@ -106,11 +104,11 @@
 								</form>
 							</article>
 						</div>
-				  	</div>
+				  	</article>
 					<!-- slide 3 carusel -->
-				  	<div class="carousel-item">
+				  	<article class="carousel-item">
 						<div class="d-flex align-items-center justify-content-center row">
-							<img src="img/milo.png" class="d-block col-lg-4 carusel__img" alt="TODO">
+							<img src="img/milo.png" class="img--xl contenedor--destacado m-3 d-block col-lg-4" alt="TODO">
 							<article class="col-lg-8 pe-xl-5">
 								<h2><strong>Milo</strong></h2> 
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat sapiente recusandae neque consectetur sed expedita nam optio nihil, assumenda.</p>
@@ -120,8 +118,8 @@
 								</form>
 							</article>
 						</div>
-				  	</div>
-				</div>
+				  	</article>
+				</section>
 				<!-- idicador de slide -->
 				<div class="carousel-indicators m-0">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -134,23 +132,23 @@
 			<!-- inicia participacion -->
 			<section class="d-flex flex-column align-items-center">
 				<h1 class="titulo bg--verde_oscuro--trasparente">¿Cómo participar?</h1>
-				<section class="d-flex justify-content-center galeria">
-					<a href="participar.html#" class="m-1 m-lg-4">
-						<figure class="galeria__figura">
-							<img class="galeria__icono" src="img/transitar.png" alt="Transitar">
-							<figcaption class="galeria__figcaption">Transitar</figcaption>
+				<section class="py-3 row">
+					<a href="participar.html#" class="m-1 m-lg-4 col">
+						<figure class="transformacion--escalar">
+							<img class="img--lg" src="img/transitar.png" alt="Transitar">
+							<figcaption class="texto--md">Transitar</figcaption>
 						</figure>
 					</a>
-					<a href="participar.html#transitar" class="m-1 m-lg-4">
-						<figure class="galeria__figura">
-							<img class="galeria__icono" src="img/ingresar_mascota.png" alt="Ingresar mascota">
-							<figcaption class="galeria__figcaption">Ingresar mascota</figcaption>
+					<a href="participar.html#transitar" class="m-1 m-lg-4 col">
+						<figure class="transformacion--escalar">
+							<img class="img--lg" src="img/ingresar_mascota.png" alt="Ingresar mascota">
+							<figcaption class="texto--md">Ingresar mascota</figcaption>
 						</figure>
 					</a>
-					<a href="participar.html#donar" class="m-1 m-lg-4">
-						<figure class="galeria__figura">
-							<img class="galeria__icono" src="img/donar.png" alt="Donar">
-							<figcaption class="galeria__figcaption">Donar</figcaption>
+					<a href="participar.html#donar" class="m-1 m-lg-4 col">
+						<figure class="transformacion--escalar">
+							<img class="img--lg" src="img/donar.png" alt="Donar">
+							<figcaption class="texto--md">Donar</figcaption>
 						</figure>
 					</a>
 				</section>
@@ -166,16 +164,16 @@
 		<footer class = "d-flex flex-column align-items-center bg--verde_oscuro py-3">
 			<h3 class="pie__titulo">Conecta con nosotros</h3>
 			<section>
-				<a href="#"> <!-- link a las redes -->
+				<a class="transformacion--sombra" href="#"> <!-- link a las redes -->
 					<img src="img/instagram.png" alt="Seguinos en instagram" class="pie__img m-3">
 				</a>
-				<a href="#">
+				<a class="transformacion--sombra" href="#">
 					<img src="img/facebook.png" alt="Seguinos en facebook" class="pie__img m-3">
 				</a>
-				<a href="#">
+				<a class="transformacion--sombra" href="#">
 					<img src="img/twitter.png" alt="Seguinos en twitter" class="pie__img m-3">
 				</a>
-				<a href="#">
+				<a class="transformacion--sombra" href="#">
 					<img src="img/youtube.png" alt="Suscribite a youtube" class="pie__img m-3">
 				</a>  
 			</section>

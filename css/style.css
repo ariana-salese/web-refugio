@@ -35,12 +35,6 @@ body {
     background-color: #fff;
 }
 
-.bg--patitas{
-    background-image: url("../img/background.png");
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 /* textos */
 .titulo--xl{
     font-weight: bold;
@@ -53,13 +47,6 @@ body {
 .titulo{
     color: #fff; 
     width: 100%;
-    margin-bottom: 1%; 
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-.textoDestacado{
-    font-size: 3rem;
 }
 
 h1{
@@ -91,147 +78,43 @@ a:hover{
     color:#000;
 }
 
+.texto--destacado{
+    font-size: 3rem;
+}
+
 .texto--sm{
     font-size: 1.2rem;
 }
 
-/* divisores */
+.texto--md{
+    font-size: 1.4rem;
+}
 
+/* divisores */
 .divisor{
     border-top: 2px solid #466e35;
 }
 
-/* navbar */
-.navbar-brand{
-    height: 8vh;
-}
-    .navbar-brand h2{
-        font-weight: bold;
-        color: #d5e0ce;
-        margin: 0;
-    }
-
-    .navbar-brand img{
-        height: inherit;
-        padding: 1vh;
-    }
-
-#links-nav .nav-link, .dropdown-item{
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #d5e0ce;
-    align-items: center;
-
-    /* Animacion subrrayado */
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-    }
-
-#links-nav .nav-link:hover, .dropdown-item:hover{
-    color: #fff;
-
-    /* Animacion subrrayado */
-    background-size: 100% 2px;
+/* contenedores */
+.contenedor--destacado{
+    border-radius: 3.3rem;
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
 }
 
-.dropdown-item{
-    color: #d5e0ce;
-    font-size: 1.3rem;
-}
-
-.dropdown-item:hover{
-    background-color: #466e35;
-}
-
-/* header */
-.inicio__contenedor{
-    position: relative;
-}
-
-.inicio__texto{
-    color: #fff;
-    height: 100%;
-}
-
-.inicio__contenedor{
-    background-image: url("../img/fondo_perro_acompaniado.png");
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-}
-
-/* galeria */
-.galeria__figura:hover{
-    transform: scale(1.1);
+/* transformaciones */
+.transformacion--escalar:hover{
+    transform: scale(1.05);
     transition: all 0.8s;
 }
 
-.galeria__figcaption{
-    font-size: 1.5rem;
-}
-
-.galeria__img, .galeria__icono{
-    width: 16rem;
-    height: 16rem;
-}
-
-.galeria__img{
-    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
-    border-radius: 3.3rem;
-}
-
-.wrapper__img {
-    position: relative;
-}
-
-.contenedor__img__description {
-    /* font */
-    color: #fff;
-    /* posicion */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* box modelo */
-    height: 16rem;
-    width: 16rem;
-    /* background y bordes */
-    background-color: rgba(0, 0, 0, 0.441);
-    border-radius: 3.3rem;
-    /* animacion */
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .6s, visibility .8s;
-}
-  
-.wrapper__img:hover .contenedor__img__description, .wrapper__img:active .contenedor__img__description {
-    visibility: visible;
-    opacity: 1;
-}
-
-.img__description{
-    width: inherit;
-}
-
-/* carusel */
-#carusel .carusel__img{
-    width: 20rem;
-    margin: 2%;
-    border-radius: 3.3rem;
+.transformacion--sombra:hover{
+    transition: all 0.5s;
     filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
 }
 
-.carousel-indicators{
-    position: static;
+.transformacion--latido{
+    animation: latido 5s infinite;
 }
-
-.carousel .carousel-indicators button{ 
-    background-color: #3a5b2c;
-} 
 
 /* botones */
 .btn, .busqueda__btn{
@@ -281,6 +164,7 @@ a:hover{
 
 .img--sm{
     width: 5rem;
+    height: 5rem;
 }
 
 .img--md{
@@ -289,50 +173,150 @@ a:hover{
 }
 
 .img--lg{
-    width: 20rem;
+    width: 16rem;
+    height: 16rem;
 }
 
 .img--xl{
+    width: 20rem;
+    height: 20rem;
+}
+
+.img--xxl{
     width: 25rem;
+    height: 25rem;
 }
-/* formulario */
-/* .formulario--w15{
-    width: 15%;
-} */
 
-/* .formulario,
-.formulario--w15{
-    padding-bottom: 20px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} 
+/* navbar */
+.navbar-brand{
+    height: 8vh;
+}
+    .navbar-brand h2{
+        font-weight: bold;
+        color: #d5e0ce;
+        margin: 0;
+    }
 
-.formulario__label{
+    .navbar-brand img{
+        height: inherit;
+        padding: 1vh;
+    }
+
+#links-nav .nav-link, .dropdown-item{
+    font-weight: bold;
     font-size: 1.5rem;
-    padding: 10px;
+    color: #d5e0ce;
+    align-items: center;
+
+    /* Animacion subrrayado */
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    }
+
+#links-nav .nav-link:hover, .dropdown-item:hover{
+    color: #fff;
+
+    /* Animacion subrrayado */
+    background-size: 100% 2px;
 }
 
-.formulario__select{
-    width: fit-content;
+.dropdown-item{
+    color: #d5e0ce;
+    font-size: 1.3rem;
 }
 
-.formulario__input{
-    margin: 10px;
-    width: 30%;
+.dropdown-item:hover{
+    background-color: #466e35;
 }
 
-.formulario__mensaje{
-    width: 60%;
-} */
+/* footer */
+.pie__img{
+    width: 2.5rem;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.pie__link{
+    font-size: 1.4rem;
+    color: #d5e0ce;
+}
+
+.pie__link:hover{
+    color: #fff;
+}
+
+.pie__titulo{
+    font-weight: bold;
+    color: #d5e0ce;
+}
+
+/******************* INDEX ******************/
+/* header*/
+.inicio__contenedor{
+    position: relative;
+}
+
+.inicio__texto{
+    color: #fff;
+    height: 100%;
+}
+
+.inicio__contenedor{
+    background-image: url("../img/fondo_perro_acompaniado.png");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
 
 /******************* NOSOTROS ******************/
+/* galeria */
+.wrapper__img {
+    position: relative;
+}
 
-/* TODO borrar? */
+.contenedor__img__descripcion {
+    /* font */
+    color: #fff;
+    /* posicion */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* box modelo */
+    height: 16rem;
+    width: 16rem;
+    /* background y bordes */
+    background-color: rgba(0, 0, 0, 0.441);
+    border-radius: 3.3rem;
+    /* animacion */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s, visibility .8s;
+}
+  
+.wrapper__img:hover .contenedor__img__descripcion, .wrapper__img:active .contenedor__img__descripcion {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__description{
+    width: inherit;
+}
+
+.carousel-indicators{
+    position: static;
+}
+
+.carousel .carousel-indicators button{ 
+    background-color: #3a5b2c;
+} 
 
 /******************* ADOPTAR ******************/
+/* requisitos */
 .lista--tick{
     list-style: disc inside url('../img/tick.png');
 }
@@ -346,10 +330,7 @@ a:hover{
     border-bottom: 2px solid #466e35;
 }
 
-.texto--md{
-    font-size: 1.2rem;
-}
-
+/* galeria */
 .animales_en_adopcion__filtro{
     font-size: 1rem;
     width: 8rem;
@@ -365,15 +346,6 @@ a:hover{
     filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.648));
     transition: scale 1s;
 }
-
-.animal:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-}
-
-/* .animal__nombre{
-    
-} */
 
 .animal__detalles{
     width: 15rem;
@@ -393,65 +365,26 @@ a:hover{
 .contenedor__animales_en_adopcion{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto;
     grid-template-areas: 
     "filtros"
     "galeria_animales"
     "indice_caracteristicas";
 }
 
-.indice{
-    width: 15%;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.indice_img{
-    width: 50px;
-    height: 50px;
-    padding: 20px;
-}
-
-.indice_figcaption{
-    font-size: 1.4rem;
-}
-
-/******************* CONTACTO ******************/
-
 /***********************************************/
-
-/* footer */
-.pie__img{
-        width: 2.5rem;
-        border-radius: 100%;
-        transition: all 0.5s;
-    }
-
-.pie__img:hover{
-    transition: all 0.5s;
-    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
-}
-
-.pie__link{
-    font-size: 1.4rem;
-    color: #d5e0ce;
-}
-
-.pie__link:hover{
-    color: #fff;
-}
-
-.pie__titulo{
-    font-weight: bold;
-    color: #d5e0ce;
-}
     
-
 /* ANIMACIONES */
 
-
+@keyframes latido {
+    0%, 50%, 100% { 
+        transform: scale(1); 
+    }
+    30%, 80% { 
+        transform: scale(1.1); 
+    }
+}
+  
 
 /* BREAKPOINTS */
 
@@ -468,5 +401,13 @@ a:hover{
     .indice_caracteristicas{
         border-left: 2px solid #466e35;
         border-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1435px){
+    #contacto, #nosotros, #participar{
+       background-image: url("../img/background.png");
+        background-size: cover;
+        background-attachment: fixed; 
     }
 }

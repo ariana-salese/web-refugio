@@ -66,22 +66,24 @@
         <!-- termina header -->
 
         <!-- inicia main -->
-        <main class="bg--patitas">
+        <main id="nosotros">
             <!-- inicia historia y mision -->
-            <section class="informacion d-flex flex-column align-items-center">
-                <article class="informacion__article row d-flex justify-content-center align-items-center my-4">
+            <section class="d-flex flex-column align-items-center">
+                <!-- historia -->
+                <article class="row d-flex justify-content-center align-items-center my-4">
                     <section class="col-md-6">
                         <h1>Historia</h1>
                         <p class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque?</p>
                     </section>
-                    <img class="img--lg col-md-6" src="img/historia.png">
+                    <img class="img--xl col-md-6" src="img/historia.png">
                 </article>
-                <article class="informacion__article row d-flex justify-content-center align-items-center my-4">
+                <!-- mision -->
+                <article class="row d-flex justify-content-center align-items-center my-4">
                     <section class="col-md-6 order-md-5">
                         <h1>Misión</h1>
                         <p class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque?</p>
                     </section>
-                    <img class="img--lg col-sm-6" src="img/mision.png">
+                    <img class="img--xl col-sm-6" src="img/mision.png">
                 </article>
             </section>
             <!-- termina historia y mision -->
@@ -89,42 +91,47 @@
             <!-- inicia galeria familias -->
             <section class="bg--verde_claro">
                <h1 class="titulo bg--verde_oscuro--trasparente">¡Familias felices!</h1>
+               <!-- familias -->
                <section class="d-flex justify-content-around row">
+                    <!-- familia 1 -->
                    <figure class="py-3 col-sm-12 col-md-6 col-xl-3"> 
                         <div class="wrapper__img d-inline-block">
-                            <img class="galeria__img" src="img/familia_diaz.png" alt="familia Diaz">
-                            <div class="contenedor__img__description d-flex justify-content-center align-items-center">
+                            <img class="img--lg contenedor--destacado" src="img/familia_diaz.png" alt="familia Diaz">
+                            <div class="contenedor__img__descripcion d-flex justify-content-center align-items-center">
                                 <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
-                        <figcaption class="galeria__figcaption">Diaz</figcaption>
+                        <figcaption class="texto--md pt-3">Diaz</figcaption>
                     </figure>
+                    <!-- familia 2 -->
                     <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
                         <div class="wrapper__img d-inline-block">
-                            <img class="galeria__img" src="img/familia_lotito.png" alt="familia Lotito">
-                            <div class="contenedor__img__description d-flex justify-content-center align-items-center">
+                            <img class="img--lg contenedor--destacado" src="img/familia_lotito.png" alt="familia Lotito">
+                            <div class="contenedor__img__descripcion d-flex justify-content-center align-items-center">
                                 <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
-                        <figcaption class="galeria__figcaption">Lotito</figcaption>
+                        <figcaption class="texto--md pt-3">Lotito</figcaption>
                     </figure>
+                    <!-- familia 3 -->
                     <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
                         <div class="wrapper__img d-inline-block">
-                            <img class="galeria__img" src="img/familia_halac.png" alt="familia Halac">
-                            <div class="contenedor__img__description d-flex justify-content-center align-items-center">
+                            <img class="img--lg contenedor--destacado" src="img/familia_halac.png" alt="familia Halac">
+                            <div class="contenedor__img__descripcion d-flex justify-content-center align-items-center">
                                 <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
-                        <figcaption class="galeria__figcaption">Halac</figcaption>
+                        <figcaption class="texto--md pt-3">Halac</figcaption>
                     </figure>
+                    <!-- familia 4 -->
                     <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
                         <div class="wrapper__img d-inline-block">
-                            <img class="galeria__img" src="img/familia_vega.png" alt="familia Vega">
-                            <div class="contenedor__img__description d-flex justify-content-center align-items-center">
+                            <img class="img--lg contenedor--destacado" src="img/familia_vega.png" alt="familia Vega">
+                            <div class="contenedor__img__descripcion d-flex justify-content-center align-items-center">
                                 <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
-                        <figcaption class="galeria__figcaption">Vega</figcaption>
+                        <figcaption class="texto--md pt-3">Vega</figcaption>
                     </figure>
                 </section>
             </section>
@@ -132,16 +139,19 @@
 
             <!-- inicio estadisticas -->
             <section class="divisor bg--blanco d-flex justify-content-center row">
+                <!-- cantidad de transitos -->
                 <article class="col m-5">
                     <img class="img--sm" src="img/icono_transitos.svg" alt="transitos realizados">
                     <h1>Transitos realizados</h1>
                     <h1 class="contador" id="contador_transitos_realizados">0</h1>
                 </article>
+                <!-- cantidad de adopciones -->
                 <article class="col m-5">
                     <img class="img--sm" src="img/icono_adoptar.svg" alt="mascotas adoptadas">
                     <h1>Mascotas adoptadas</h1>
                     <h1 class="contador" id="contador_adopciones">0</h1>
                 </article>
+                <!-- cantidad de donaciones -->
                 <article class="col m-5">
                     <img class="img--sm" src="img/icono_donar.svg" alt="donaciones recibidas">
                     <h1>Donaciones recibidas</h1>
@@ -154,19 +164,20 @@
         <!-- termina main -->
 
         <!-- inicia footer -->
+		<!-- inicia footer -->
 		<footer class = "d-flex flex-column align-items-center bg--verde_oscuro py-3">
 			<h3 class="pie__titulo">Conecta con nosotros</h3>
 			<section>
-				<a href="#"> <!-- aca irian los link a las redes -->
+				<a class="transformacion--sombra" href="#"> <!-- link a las redes -->
 					<img src="img/instagram.png" alt="Seguinos en instagram" class="pie__img m-3">
 				</a>
-				<a href="#">
+				<a class="transformacion--sombra" href="#">
 					<img src="img/facebook.png" alt="Seguinos en facebook" class="pie__img m-3">
 				</a>
-				<a href="#">
+				<a class="transformacion--sombra" href="#">
 					<img src="img/twitter.png" alt="Seguinos en twitter" class="pie__img m-3">
 				</a>
-				<a href="#">
+				<a class="transformacion--sombra" href="#">
 					<img src="img/youtube.png" alt="Suscribite a youtube" class="pie__img m-3">
 				</a>  
 			</section>
