@@ -101,21 +101,6 @@ a:hover{
     filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
 }
 
-/* transformaciones */
-.transformacion--escalar:hover{
-    transform: scale(1.05);
-    transition: all 0.8s;
-}
-
-.transformacion--sombra:hover{
-    transition: all 0.5s;
-    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
-}
-
-.transformacion--latido{
-    animation: latido 5s infinite;
-}
-
 /* botones */
 .btn, .busqueda__btn{
     /* font */
@@ -132,7 +117,7 @@ a:hover{
     border: 2px solid #466e35;
     box-shadow: rgba(0, 0, 0, 0.42) 6px 5px 14px -2px;
     border-radius: 1rem;
-    /* animacion */
+    /* transicion */
     transition : 1000ms;
     transform: translateY(0);
 }
@@ -146,14 +131,17 @@ a:hover{
     padding: 1vh 4vh;
     /* borde */
     border: solid 2px #466e35;
-    /* animacion */
+    /* transicion */
     transition : 1000ms;
 }
 
 .busqueda__btn:hover{
-    background-color: #fff;
-    transition : 1000ms;
+    /* font */
     color: #466e35;
+    /* background */
+    background-color: #fff;
+    /* transicion */
+    transition : 1000ms;
 }
 
 /* imagenes */
@@ -185,6 +173,25 @@ a:hover{
 .img--xxl{
     width: 25rem;
     height: 25rem;
+}
+
+/* transformaciones y clases que aplican animaciones */
+.transformacion--escalar:hover{
+    transform: scale(1.05);
+    transition: all 0.8s;
+}
+
+.transformacion--sombra:hover{
+    transition: all 0.5s;
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
+}
+
+.animacion--latido{
+    animation: latido 5s infinite;
+}
+
+.animacion--entrada_texto{
+    animation: entrada_texto 3s 1;
 }
 
 /* navbar */
@@ -383,9 +390,26 @@ a:hover{
         transform: scale(1.1); 
     }
 }
-  
 
+@keyframes entrada_texto{
+    from{
+        opacity: 0;
+        transform: scale(0.9)
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+  
 /* BREAKPOINTS */
+@media screen and (max-width: 300px){
+    .img--xl{
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
 @media screen and (min-width: 900px){
     .contenedor__animales_en_adopcion{
         grid-template-columns: 3fr 1fr;

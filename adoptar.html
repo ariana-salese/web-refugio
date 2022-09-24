@@ -18,12 +18,12 @@
 
     <body>
         <!-- inicia nav -->
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top bg--verde_oscuro" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg--verde_oscuro" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
                 <a href="index.html" class="navbar-brand d-flex align-items-center" id="logo-nav">
                     <img src="img/logo.svg" alt="Logo adopcion">
-                    <h2>Refugio Patitas</h2>
+                    <h2 class="d-none d-sm-block">Refugio Patitas</h2>
                 </a>
 				<!-- boton hamburguesa -->
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,6 +91,7 @@
                 <div class="contenedor__animales_en_adopcion">
                     <!-- filtros de busqueda -->
                     <form class="filtros bg--verde_claro p-4 d-flex flex-wrap justify-content-around row">
+                        <!-- filtro 1 -->
                         <div class="col-sm-6 col-md-2 d-flex flex-column align-items-center">
                             <label class="texto--md m-1">Mascota:</label>
                             <select class="animales_en_adopcion__filtro">
@@ -100,6 +101,7 @@
                                 <option>Otros</option>
                             </select>
                         </div>
+                        <!-- filtro 2 -->
                         <div class="col-sm-6 col-md-2 d-flex flex-column align-items-center">
                             <label class="texto--md m-1 ">Edad:</label>
                             <select class="animales_en_adopcion__filtro">
@@ -109,6 +111,7 @@
                                 <option>más de dos años</option>
                             </select>
                         </div>
+                        <!-- filtro 3 -->
                         <div class="col-sm-6 col-md-2 d-flex flex-column align-items-center">
                             <label class="texto--md m-1 ">Convivencia:</label>
                             <select class="animales_en_adopcion__filtro">
@@ -117,6 +120,7 @@
                                 <option>Otro animal</option>
                             </select>
                         </div>
+                        <!-- filtro 4 -->
                         <div class="col-sm-6 col-md-2 d-flex flex-column align-items-center">
                             <label class="texto--md m-1">Tamaño:</label>
                             <select class="animales_en_adopcion__filtro">
@@ -130,24 +134,27 @@
                     
                     <!-- galeria animales -->
                     <section class="galeria_animales d-flex flex-wrap justify-content-around">
+                        <!-- animal 1 -->
                         <article class="animal transformacion--escalar bg--gris d-flex flex-column align-items-center m-4">
                             <h2 class=" m-0">Thor</h2>
                             <img class="animal__img " src="img/thor.png">
                             <div class="animal__detalles py-1 d-flex justify-content-between">
-                                <img class="img--xs" src="img/hembra.svg" alt="macho">
+                                <img class="img--xs" src="img/hembra.svg" alt="hembra">
                                 <h4>1 mes</h4>
-                                <img class="img--xs" src="img/energico.svg" alt="jugueton">
+                                <img class="img--xs" src="img/energico.svg" alt="energico">
                             </div>
                         </article>
+                        <!-- animal 2 -->
                         <article class="animal transformacion--escalar bg--gris d-flex flex-column align-items-center m-4">
                             <h2 class="m-0">Loki</h2>
                             <img class="animal__img" src="img/loki.png">
                             <div class="animal__detalles py-1 d-flex justify-content-between">
                                 <img class="img--xs" src="img/macho.svg" alt="macho">
                                 <h4>1 a 2 años</h4>
-                                <img class="img--xs" src="img/companiero.svg" alt="jugueton">
+                                <img class="img--xs" src="img/companiero.svg" alt="compañero">
                             </div>
                         </article>
+                        <!-- animal 3 -->
                         <article class="animal transformacion--escalar bg--gris d-flex flex-column align-items-center m-4">
                             <h2 class="m-0">Milo</h2>
                             <img class="animal__img" src="img/milo.png">
@@ -157,24 +164,27 @@
                                 <img class="img--xs" src="img/jugueton.svg" alt="jugueton">
                             </div>
                         </article>
+                        <!-- animal 4 -->
                         <article class="animal transformacion--escalar bg--gris d-flex flex-column align-items-center m-4">
                             <h2 class="m-0">Milka</h2>
                             <img class="animal__img" src="img/milka.png">
                             <div class="animal__detalles py-1 d-flex justify-content-between">
                                 <img class="img--xs" src="img/macho.svg" alt="macho">
                                 <h4>2 meses</h4>
-                                <img class="img--xs" src="img/companiero.svg" alt="jugueton">
+                                <img class="img--xs" src="img/companiero.svg" alt="compañero">
                             </div>
                         </article>
+                        <!-- animal 5 -->
                         <article class="animal transformacion--escalar bg--gris d-flex flex-column align-items-center m-4">
                             <h2 class="m-0">Sushi</h2>
                             <img class="animal__img" src="img/sushi.png">
                             <div class="animal__detalles py-1 d-flex justify-content-between">
-                                <img class="img--xs" src="img/hembra.svg" alt="macho">
+                                <img class="img--xs" src="img/hembra.svg" alt="hembra">
                                 <h4>1 año</h4>
-                                <img class="img--xs" src="img/dormilon.svg" alt="jugueton">
+                                <img class="img--xs" src="img/dormilon.svg" alt="dormilon">
                             </div>
                         </article>
+                        <!-- animal 6 -->
                         <article class="animal transformacion--escalar bg--gris d-flex flex-column align-items-center m-4">
                             <h2 class="m-0">Abi</h2>
                             <img class="animal__img" src="img/abi.png">
@@ -188,26 +198,32 @@
                     
                     <!-- indice de caracteristicas -->
                     <section class="indice_caracteristicas bg--verde_claro d-flex justify-content-center align-items-center flex-wrap">
+                        <!-- caracterisitica 1 -->
                         <figure class="m-4">
                             <img class="img--sm" src="img/macho.svg">
                             <figcaption class="texto--sm">Macho</figcaption>
                         </figure>
+                        <!-- caracterisitica 2 -->
                         <figure class="m-4">
                             <img class="img--sm" src="img/hembra.svg">
                             <figcaption class="texto--sm">Hembra</figcaption>
                         </figure>
+                        <!-- caracterisitica 3 -->
                         <figure class="m-4">
                             <img class="img--sm" src="img/jugueton.svg">
                             <figcaption class="texto--sm">Jugueton</figcaption>
                         </figure>
+                        <!-- caracterisitica 4 -->
                         <figure class="m-4">
                             <img class="img--sm" src="img/dormilon.svg">
                             <figcaption class="texto--sm">Dormilon</figcaption>
                         </figure>
+                        <!-- caracterisitica 5 -->
                         <figure class="m-4">
                             <img class="img--sm" src="img/companiero.svg">
                             <figcaption class="texto--sm">Compañero</figcaption>
                         </figure>
+                        <!-- caracterisitica 6 -->
                         <figure class="m-4">
                             <img class="img--sm" src="img/energico.svg">
                             <figcaption class="texto--sm">Enérgico</figcaption>
