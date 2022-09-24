@@ -375,7 +375,6 @@ a:hover{
 /***********************************************/
     
 /* ANIMACIONES */
-
 @keyframes latido {
     0%, 50%, 100% { 
         transform: scale(1); 
@@ -387,7 +386,6 @@ a:hover{
   
 
 /* BREAKPOINTS */
-
 @media screen and (min-width: 900px){
     .contenedor__animales_en_adopcion{
         grid-template-columns: 3fr 1fr;
@@ -406,7 +404,7 @@ a:hover{
 
 @media screen and (min-width: 1435px){
     #contacto, #nosotros, #participar{
-       background-image: url("../img/background.png");
+       background-image: url("../img/fondo_patitas.svg");
         background-size: cover;
         background-attachment: fixed; 
     }
