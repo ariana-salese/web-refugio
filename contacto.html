@@ -13,16 +13,16 @@
 
         <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
 
     <body>
         <!-- inicia nav -->
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg--verde_oscuro" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
-                <a href="index.html" class="navbar-brand d-flex align-items-center" id="logo-nav">
+                <a href="index.html" class="navbar-brand" id="logo-nav">
                     <img src="img/logo.svg" alt="Logo adopcion">
                     <h2 class="d-none d-sm-block">Refugio Patitas</h2>
                 </a>
@@ -44,9 +44,9 @@
                   		</li>
                   		<li class="nav-item dropdown">
                     		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
-                    		<ul class="dropdown-menu bg--verde_oscuro" aria-labelledby="navbarDropdown">
-                      			<li><a class="dropdown-item" href="participar.html">Transitar</a></li>
-                      			<li><a class="dropdown-item" href="participar.html#transitar">Ingresar Mascota</a></li>
+                    		<ul class="dropdown-menu bg--color_principal" aria-labelledby="navbarDropdown">
+                      			<li><a class="dropdown-item" href="participar.html#transitar">Transitar</a></li>
+                      			<li><a class="dropdown-item" href="participar.html#ingresar_mascota">Ingresar Mascota</a></li>
                       			<li><a class="dropdown-item" href="participar.html#donar">Donar</a></li>
                     		</ul>
                 		</li>
@@ -61,76 +61,79 @@
 
         <!-- inicia header -->
         <header>
-            <h1 class="titulo--xl bg--verde_oscuro pt-2 m-0">CONTACTO</h1>
+            <h1 class="titulo--xl">CONTACTO</h1>
         </header>
         <!-- termina header -->
 
         <!-- inicia main -->
-        <main id="contacto">
-            <section class="bg--blanco d-flex justify-content-center">
-                <img class="img--md animacion--latido m-5" src="img/denunciar_izq.svg">
+        <main class="fondo_patitas">
+            <section class="d-flex justify-content-center">
+                <img class="img--md animacion--latido contenedor--destacado d-none d-md-block m-5" src="img/denunciar_izq.svg">
                 <article class="m-5">
                     <h1>¡Denuncia!</h1>
                     <h1>Maltrato animal</h1>
                     <button class="btn">Denunciar</button>
                 </article>
-                <img class="img--md animacion--latido m-5" src="img/denunciar_der.svg">
+                <img class="img--md animacion--latido contenedor--destacado d-none d-md-block m-5" src="img/denunciar_der.svg">
             </section>
 
-            <section class="bg--verde_claro">
-                <h1 class="titulo bg--verde_oscuro--trasparente m-0">Conecta con nosotros</h1>
-                <section class="py-4 d-flex justify-content-center">
-                    <article class="mx-4">
-                        <img class="img--sm" src="img/instagram_oscuro.svg" alt="Seguinos en instagram">
+            <section class="bg--color_terciario">
+                <h1 class="titulo m-0">Conecta con nosotros</h1>
+                <section class="py-4 d-flex justify-content-center row">
+                    <article class="transformacion--escalar col-12 col-sm-6 col-lg-3">
+                        <img class="img--sm" src="img/iconos_contacto/instagram_oscuro.svg" alt="Seguinos en instagram">
                         <h3 class=""><a href="#">Instagram</a></h3>
                     </article>
-                    <article class="mx-4">
-                        <img class="img--sm" src="img/facebook_oscuro.svg" alt="Seguinos en Facebook">
+                    <article class="transformacion--escalar col-12 col-sm-6 col-lg-3">
+                        <img class="img--sm" src="img/iconos_contacto/facebook_oscuro.svg" alt="Seguinos en Facebook">
                         <h3 class=""><a href="#">Facebook</a></h3>
                     </article>
-                    <article class="mx-4 ">
-                        <img class="img--sm" src="img/twitter_oscuro.svg" alt="Seguinos en Twitter">
+                    <article class="transformacion--escalar col-12 col-sm-6 col-lg-3">
+                        <img class="img--sm" src="img/iconos_contacto/twitter_oscuro.svg" alt="Seguinos en Twitter">
                         <h3 class=""><a href="#">Twitter</a></h3>
                     </article>
-                    <article class="mx-4">
-                        <img class="img--sm" src="img/youtube_oscuro.svg" alt="Seguinos en Youtube">
+                    <article class="transformacion--escalar col-12 col-sm-6 col-lg-3">
+                        <img class="img--sm" src="img/iconos_contacto/youtube_oscuro.svg" alt="Seguinos en Youtube">
                         <h3 class=""><a href="#">Youtube</a></h3>
                     </article>
                 </section>
             </section>
 
             <section class="">
-                <h1 class="titulo bg--verde_oscuro--trasparente m-0">Envianos un mensaje</h1>
+                <h1 class="titulo">Envianos un mensaje</h1>
                 <form class="d-flex flex-column align-items-center my-3" id="contacto">
                     <label class="texto--sm" for="name">Nombre:</label>
-                    <input class="mb-3 w-25" type="text" id="name">
+                    <input class="formulario__input texto--sm mb-3 w-25" type="text" id="name">
                     <label class="texto--sm" for="mail">Email:</label>
-                    <input class="mb-3 w-25" type="email" id="mail">
-                    <label class="texto--sm" for="tel">Telefono</label>
-                    <input class="mb-3 w-25" type="tel" id="tel">
-                    <label class="texto--sm" for="text">Mensaje</label>
-                    <textarea class="mb-3  w-25" name="" id="mensaje" cols="30" rows="10"></textarea>
+                    <input class="formulario__input texto--sm mb-3 w-25" type="email" id="mail">
+                    <label class="texto--sm" for="tel">Teléfono:</label>
+                    <input class="formulario__input texto--sm mb-3 w-25" type="tel" id="tel">
+                    <label class="texto--sm" for="text">Mensaje:</label>
+                    <textarea class="formulario__input texto--sm mb-3 w-25" name="" id="mensaje" cols="30" rows="10"></textarea>
                     <input class="btn" type="submit" value="Enviar">
                 </form>
             </section>
+
+            <!-- FAQ -->
+            
         </main>
         <!-- termina main -->
 
         <!-- inicia footer -->
-		<footer class = "d-flex flex-column align-items-center bg--verde_oscuro py-3">
+		<footer class = "pie d-flex flex-column align-items-center py-3">
 			<h3 class="pie__titulo">Conecta con nosotros</h3>
 			<section>
 				<a class="transformacion--sombra" href="#"> <!-- link a las redes -->
-					<img src="img/instagram.svg" alt="Seguinos en instagram" class="pie__img m-3">
+					<img src="img/iconos_contacto/instagram.svg" class="pie__img m-3" alt="Seguinos en instagram">
 				</a>
 				<a class="transformacion--sombra" href="#">
-					<img src="img/facebook.svg" alt="Seguinos en facebook" class="pie__img m-3">
+					<img src="img/iconos_contacto/facebook.svg" class="pie__img m-3" alt="Seguinos en facebook">
 				</a>
 				<a class="transformacion--sombra" href="#">
-					<img src="img/twitter.svg" alt="Seguinos en twitter" class="pie__img m-3">
+					<img src="img/iconos_contacto/twitter.svg" class="pie__img m-3" alt="Seguinos en twitter">
 				</a>
 				<a class="transformacion--sombra" href="#">
-					<img src="img/youtube.svg" alt="Suscribite a youtube" class="pie__img m-3">
+					<img src="img/iconos_contacto/youtube.svg" class="pie__img m-3" alt="Suscribite a youtube">
 				</a>  
 			</section>
 			<a href="contacto.html" class="pie__link">Contacto</a>

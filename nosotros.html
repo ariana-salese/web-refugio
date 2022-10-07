@@ -14,15 +14,15 @@
 
         <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
         <!-- inicia nav -->
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg--verde_oscuro" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
-                <a href="index.html" class="navbar-brand d-flex align-items-center" id="logo-nav">
+                <a href="index.html" class="navbar-brand" id="logo-nav">
                     <img src="img/logo.svg" alt="Logo adopcion">
                     <h2 class="d-none d-sm-block">Refugio Patitas</h2>
                 </a>
@@ -44,9 +44,9 @@
                   		</li>
                   		<li class="nav-item dropdown">
                     		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
-                    		<ul class="dropdown-menu bg--verde_oscuro" aria-labelledby="navbarDropdown">
-                      			<li><a class="dropdown-item" href="participar.html">Transitar</a></li>
-                      			<li><a class="dropdown-item" href="participar.html#transitar">Ingresar Mascota</a></li>
+                    		<ul class="dropdown-menu bg--color_principal" aria-labelledby="navbarDropdown">
+                      			<li><a class="dropdown-item" href="participar.html#transitar">Transitar</a></li>
+                      			<li><a class="dropdown-item" href="participar.html#ingresar_mascota">Ingresar Mascota</a></li>
                       			<li><a class="dropdown-item" href="participar.html#donar">Donar</a></li>
                     		</ul>
                 		</li>
@@ -61,44 +61,56 @@
 
         <!-- inicia header -->
         <header>
-            <h1 class="titulo--xl bg--verde_oscuro pt-2 m-0">NOSOTROS</h1>
+            <h1 class="titulo--xl">NOSOTROS</h1>
         </header>
         <!-- termina header -->
 
         <!-- inicia main -->
-        <main id="nosotros">
+        <main class="fondo_patitas">
             <!-- inicia historia y mision -->
             <section class="d-flex flex-column align-items-center">
                 <!-- historia -->
-                <article class="row d-flex justify-content-center align-items-center my-4">
+                <article class="row d-flex justify-content-center align-items-center mt-4">
                     <section class="col-md-6">
                         <h1>Historia</h1>
-                        <p class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque?</p>
+                        <p class="mx-2">
+                            El Refugio Patitas fue fundado en el 2005, para cuidar y encontrarle familia a 
+                            los mejores compañeros que podemos tener. Desde entonces dependemos de la voluntad y 
+                            cariño de la gente, a traves de donaciones y voluntarios con ganas de contribuir a 
+                            esta hermosa causa.
+                        </p>
                     </section>
-                    <img class="img--xl col-md-6" src="img/historia.svg" alt="ilustracion historia">
+                    <img class="img--xl col-md-6" src="img/ilustraciones/historia.svg" alt="ilustracion historia">
                 </article>
                 <!-- mision -->
-                <article class="row d-flex justify-content-center align-items-center my-4">
+                <article class="row d-flex justify-content-center align-items-center mb-4">
                     <section class="col-md-6 order-md-5">
                         <h1>Misión</h1>
-                        <p class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque?</p>
+                        <p class="mx-2">
+                            Nuestra misión es generar un espacio de acogida para los animales que necesiten
+                            ayuda, cuidarlos y quererlos hasta que estén en condiciones de formar parte de un nuevo hogar.
+                            Previo a sumar un compañero a un nuevo hogar nos aseguramos que se provee el espacio y familia
+                            correcta.
                     </section>
-                    <img class="img--xl col-sm-6" src="img/mision.svg" alt="ilustracion mision">
+                    <img class="img--xl col-sm-6" src="img/ilustraciones/mision.svg" alt="ilustracion mision">
                 </article>
             </section>
             <!-- termina historia y mision -->
 
             <!-- inicia galeria familias -->
-            <section class="bg--verde_claro">
-               <h1 class="titulo bg--verde_oscuro--trasparente">¡Familias felices!</h1>
+            <section class="bg--color_terciario">
+               <h1 class="titulo">¡Familias felices!</h1>
                <!-- familias -->
                <section class="d-flex justify-content-around row">
                     <!-- familia 1 -->
                    <figure class="py-3 col-sm-12 col-md-6 col-xl-3"> 
                         <div class="wrapper__img d-inline-block">
-                            <img class="img--lg contenedor--destacado" src="img/familia_diaz.png" alt="familia Diaz">
-                            <div class="contenedor__img__descripcion d-flex justify-content-center align-items-center">
-                                <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <img class="img--lg contenedor--destacado" src="img/familias/familia_diaz.png" alt="familia Diaz">
+                            <div class="wrapper__img__descripcion d-flex justify-content-center align-items-center">
+                                <p>
+                                    Duna, la perrita más tranquilo del mundo, se sumó a la familia Díaz donde esta acompañada y 
+                                    cuidada por Norma, con quien mira chimentos todo el día.
+                                </p>
                             </div>
                         </div>
                         <figcaption class="texto--md pt-3">Diaz</figcaption>
@@ -106,9 +118,12 @@
                     <!-- familia 2 -->
                     <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
                         <div class="wrapper__img d-inline-block">
-                            <img class="img--lg contenedor--destacado" src="img/familia_lotito.png" alt="familia Lotito">
-                            <div class="contenedor__img__descripcion d-flex justify-content-center align-items-center">
-                                <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <img class="img--lg contenedor--destacado" src="img/familias/familia_lotito.png" alt="familia Lotito">
+                            <div class="wrapper__img__descripcion d-flex justify-content-center align-items-center">
+                                <p>
+                                    Zoe adoptó al juguetón Muni hace más de un año, desde entonces se pasan todos 
+                                    los findes en los boqués de palermo.
+                                </p>
                             </div>
                         </div>
                         <figcaption class="texto--md pt-3">Lotito</figcaption>
@@ -116,9 +131,12 @@
                     <!-- familia 3 -->
                     <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
                         <div class="wrapper__img d-inline-block">
-                            <img class="img--lg contenedor--destacado" src="img/familia_halac.png" alt="familia Halac">
-                            <div class="contenedor__img__descripcion d-flex justify-content-center align-items-center">
-                                <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <img class="img--lg contenedor--destacado" src="img/familias/familia_halac.png" alt="familia Halac">
+                            <div class="wrapper__img__descripcion d-flex justify-content-center align-items-center">
+                                <p>
+                                    Tomás y Roco son inseparables, salen hasta andar en roller juntos y comparten lindos
+                                    momentos con la familia Lotito.
+                                </p>
                             </div>
                         </div>
                         <figcaption class="texto--md pt-3">Halac</figcaption>
@@ -126,34 +144,37 @@
                     <!-- familia 4 -->
                     <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
                         <div class="wrapper__img d-inline-block">
-                            <img class="img--lg contenedor--destacado" src="img/familia_vega.png" alt="familia Vega">
-                            <div class="contenedor__img__descripcion d-flex justify-content-center align-items-center">
-                                <p class="img__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <img class="img--lg contenedor--destacado" src="img/familias/familia_salese.png" alt="familia Vega">
+                            <div class="wrapper__img__descripcion d-flex justify-content-center align-items-center">
+                                <p>
+                                    Desde que Bingo se unio a la familia Salese pasa todos sus días jugando
+                                    y creciendo junto a ellos.
+                                </p>
                             </div>
                         </div>
-                        <figcaption class="texto--md pt-3">Vega</figcaption>
+                        <figcaption class="texto--md pt-3">Salese</figcaption>
                     </figure>
                 </section>
             </section>
             <!-- termina galeria familias -->
 
             <!-- inicio estadisticas -->
-            <section class="divisor bg--blanco d-flex justify-content-center row">
+            <section class="divisor d-flex justify-content-center row">
                 <!-- cantidad de transitos -->
                 <article class="col m-5">
-                    <img class="img--sm" src="img/icono_transitos.svg" alt="transitos realizados">
+                    <img class="img--sm" src="img/iconos_estadisticas/icono_transitos.svg" alt="transitos realizados">
                     <h1>Transitos realizados</h1>
                     <h1 class="contador" id="contador_transitos_realizados">0</h1>
                 </article>
                 <!-- cantidad de adopciones -->
                 <article class="col m-5">
-                    <img class="img--sm" src="img/icono_adoptar.svg" alt="mascotas adoptadas">
+                    <img class="img--sm" src="img/iconos_estadisticas/icono_adoptar.svg" alt="mascotas adoptadas">
                     <h1>Mascotas adoptadas</h1>
                     <h1 class="contador" id="contador_adopciones">0</h1>
                 </article>
                 <!-- cantidad de donaciones -->
                 <article class="col m-5">
-                    <img class="img--sm" src="img/icono_donar.svg" alt="donaciones recibidas">
+                    <img class="img--sm" src="img/iconos_estadisticas/icono_donar.svg" alt="donaciones recibidas">
                     <h1>Donaciones recibidas</h1>
                     <h1 class="contador" id="contador_donaciones">0</h1>
                 </article>
@@ -164,20 +185,20 @@
         <!-- termina main -->
 
 		<!-- inicia footer -->
-		<footer class = "d-flex flex-column align-items-center bg--verde_oscuro py-3">
+		<footer class = "pie d-flex flex-column align-items-center py-3">
 			<h3 class="pie__titulo">Conecta con nosotros</h3>
 			<section>
 				<a class="transformacion--sombra" href="#"> <!-- link a las redes -->
-					<img src="img/instagram.svg" alt="Seguinos en instagram" class="pie__img m-3">
+					<img src="img/iconos_contacto/instagram.svg" class="pie__img m-3" alt="Seguinos en instagram">
 				</a>
 				<a class="transformacion--sombra" href="#">
-					<img src="img/facebook.svg" alt="Seguinos en facebook" class="pie__img m-3">
+					<img src="img/iconos_contacto/facebook.svg" class="pie__img m-3" alt="Seguinos en facebook">
 				</a>
 				<a class="transformacion--sombra" href="#">
-					<img src="img/twitter.svg" alt="Seguinos en twitter" class="pie__img m-3">
+					<img src="img/iconos_contacto/twitter.svg" class="pie__img m-3" alt="Seguinos en twitter">
 				</a>
 				<a class="transformacion--sombra" href="#">
-					<img src="img/youtube.svg" alt="Suscribite a youtube" class="pie__img m-3">
+					<img src="img/iconos_contacto/youtube.svg" class="pie__img m-3" alt="Suscribite a youtube">
 				</a>  
 			</section>
 			<a href="contacto.html" class="pie__link">Contacto</a>
@@ -186,7 +207,7 @@
 
         <!-- Bootstrap: JavaScript Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        <script src="animacion_contador.js"></script>
+        <script src="js/animacion_contador.js"></script>
 
     </body>
 </html>

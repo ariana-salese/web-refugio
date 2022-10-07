@@ -1,0 +1,81 @@
+//requisitos
+.lista--tick{
+    list-style: disc inside url('../img/tick.png');
+    li{
+        text-align: start;
+        font-size: $textoSm;
+    }
+}
+
+//animales en adopcion
+.filtro{
+    grid-area: filtros;
+    border-bottom: 2px solid $colorPrincipal;
+}
+
+.filtro__opciones{
+    font-size: $textoSm;
+    width: 8rem;
+}
+
+.galeria_animales{
+    grid-area: galeria_animales;
+}
+
+.galeria_animales__animal{
+    width: 18rem;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.648));
+    transition: scale 1s;
+}
+
+.galeria_animales__detalles{
+    width: 15rem;
+}
+
+.galeria_animales__img{
+    border-radius: 10px;
+}
+
+.galeria_animales__boton_paginas{
+    ul li a{
+        border: 1px solid $colorPrincipal;
+    }
+    ul li a{
+        background-color: $colorTerciario;
+        color: #000;
+    }
+    ul li:hover a{
+        background-color: $colorPrincipal;
+        color: #fff;
+    }
+}
+
+.indice_caracteristicas{
+    grid-area: indice_caracteristicas;
+    border-top: 2px solid $colorPrincipal;
+
+    @media screen and (min-width: 900px){
+        border-left: 2px solid $colorPrincipal;
+        border-top: 0;
+    }
+}
+
+.animales_en_adopcion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "filtros"
+    "galeria_animales"
+    "indice_caracteristicas";
+
+    @media screen and (min-width: 900px){
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "filtros indice_caracteristicas"
+        "galeria_animales indice_caracteristicas"
+        "galeria_animales indice_caracteristicas";
+    }
+}

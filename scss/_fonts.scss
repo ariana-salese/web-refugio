@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab:wght@600&display=swap');
+
+$fontPrincipal: 'Josefin Sans', sans-serif;
+
+//fontsize
+$textoSm: 1.2rem;
+$textoMd: 1.5rem;
+$textoXl: 2.5rem;
+$textoXxl: 3rem;
+
+$fontsizesTags:(
+    h1: 2.5rem,
+    h2: 1.7rem,
+    h3: 1.5rem,
+    h4: 1.2rem,
+    p: 1.3rem,
+);
+
+$fontsizesClases:(
+    texto--sm: 1.2rem,
+    texto--md: 1.5rem,
+    texto--lg: 2rem,
+    texto--xl: 2.5rem,
+    texto--xxl: 3rem
+);
+
+//fontweight
+$textoRegular: 400;
+// $textoLight: 300;
+$textoBold: 600;
+
+.titulo--xl{
+    font-weight: $textoBold;//bold; TODO
+    font-size: $textoXl;
+    background-color: $colorPrincipal;
+    color:#fff;
+    text-shadow: rgba(0, 0, 0, 0.344) 3px 2px 2px; //mixin? TODO
+    border-top: 2px solid $colorTerciario;
+    padding-top: 0.2em;
+    margin: 0;
+}
+
+.titulo{
+    color: #fff; 
+    width: $w-100;
+    background-color: $colorSecundario;
+}
+
+.texto--destacado{
+    font-size: $textoXxl;
+    font-weight: $textoBold; //FUNCA? TODO
+}
+
+@each $tag, $fontsize in $fontsizesTags { //TODO hacer mixin con esto?
+    #{$tag} {
+      font-size: $fontsize;
+    }
+}
+
+@each $clase, $fontsize in $fontsizesClases {
+    .#{$clase} {
+        font-size: $fontsize;
+    }
+}
+
+a{
+    color:#000;
+    text-decoration: none;
+    &:hover{
+        color:#000;
+    }
+}

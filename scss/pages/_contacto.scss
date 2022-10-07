@@ -1,0 +1,9 @@
+.formulario__input{
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.251));
+    border-radius:0.5rem;
+    border: 1px solid $colorPrincipal;
+
+    &:focus{
+        background-color: $colorNeutro;
+    }
+}

@@ -1,0 +1,36 @@
+//variables
+$radioBordes:3.3rem;
+
+$imgXs: 2.2rem;
+$imgSm: 5rem;
+$imgMd: 10rem;
+$imgLg: 16rem;
+$imgXl: 20rem;
+$imgXxl: 25rem;
+
+$dimensionesImagenesClases:( //va en commons? TODO
+    img--xs: $imgXs,
+    img--sm: $imgSm,
+    img--md: $imgMd,
+    img--lg: $imgLg,
+    img--xl: $imgXl,
+    img--xxl: $imgXxl
+);
+
+//divisores
+.divisor{
+    border-top: 2px solid $colorPrincipal;
+}
+
+//contenedores
+.contenedor--destacado{
+    border-radius: $radioBordes;
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801)); //TODO mixin?
+}
+
+//imagenes
+@each $clase, $dimension in $dimensionesImagenesClases {
+    .#{$clase} {
+        @include size($dimension);
+    }
+}

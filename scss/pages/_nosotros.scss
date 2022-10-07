@@ -1,0 +1,33 @@
+
+
+//galeria familias
+.wrapper__img {
+    position: relative;
+}
+
+.wrapper__img__descripcion {
+    //box model
+    @include size($imgLg);
+    // font 
+    color: #fff;
+    // posicion
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // background y bordes
+    background-color: rgba(0, 0, 0, 0.441);
+    border-radius: $radioBordes;
+    // animacion 
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s, visibility .8s;
+}
+  
+.wrapper__img{
+    &:hover .wrapper__img__descripcion, &:active .wrapper__img__descripcion {
+        visibility: visible;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,35 @@
+//variables
+$colorPrincipal: #466e35;
+$colorSecundario: #466e35bf; 
+$colorTerciario: #d5e0ce;
+$colorNeutro: #eaeaea;
+
+//paleta de colores
+$coloresFondoClases:(
+    bg--color_principal: $colorPrincipal, 
+    bg--color_secundario: $colorSecundario, 
+    bg--color_terciario: $colorTerciario,
+    bg--color_neutro: $colorNeutro
+);
+
+//sizing
+$w-100:100%;
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+@each $clase, $color in $coloresFondoClases {
+    .#{$clase} {
+        background-color: $color;
+    }
+}

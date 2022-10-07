@@ -1,0 +1,23 @@
+//header
+.header_index{
+    position: relative;
+    background-image: url("../img/fondos/fondo_perro_acompaniado.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header_index__texto{
+    color: #fff;
+    height: 100%;
+}
+
+//carusel
+#carusel {
+    .carusel__indicadores{
+        position: static;
+    }
+    .carusel__indicador{ 
+        background-color: $colorPrincipal;
+    }
+}

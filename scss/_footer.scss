@@ -1,0 +1,23 @@
+.pie{
+    background-color: $colorPrincipal;
+}
+
+.pie__img{
+    @include size($imgXs);
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.pie__link{
+    font-size: $textoSm;
+    color: $colorTerciario;
+}
+
+.pie__link:hover{
+    color: #fff;
+}
+
+.pie__titulo{
+    font-weight: $textoBold;
+    color: $colorTerciario;
+}

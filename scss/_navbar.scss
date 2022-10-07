@@ -1,0 +1,45 @@
+.navbar{
+    background-color: $colorPrincipal; 
+    .navbar-brand{
+        @include flex(row, center, center, nowrap);
+        height: 8vh;
+        h2{
+            font-weight: bold;
+            color: $colorTerciario;
+            margin: 0;
+        }
+        img{
+            height: inherit;
+            padding: 1vh;
+        }
+    }
+}
+
+#links-nav .nav-link, .dropdown-item{
+    font-weight: $textoBold;
+    font-size: $textoMd;
+    color: $colorTerciario;
+    align-items: center;
+
+    /* Animacion subrrayado */
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+#links-nav .nav-link:hover, .dropdown-item:hover{
+    color: #fff;
+
+    /* Animacion subrrayado */
+    background-size: 100% 2px;
+}
+
+.dropdown-item{
+    color: $colorTerciario;
+    font-size: $textoMd;
+    &:hover{
+        background-color: $colorPrincipal;
+    }
+}
