@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
-                <a href="index.html" class="navbar-brand" id="logo-nav">
+                <a href="index.html" class="nav__logo navbar-brand d-flex justify-content-center align-items-center" id="logo-nav">
                     <img src="img/logo.svg" alt="Logo adopcion">
                     <h2 class="d-none d-sm-block">Refugio Patitas</h2>
                 </a>
@@ -32,26 +32,26 @@
 				</button>
 				<!-- links nav -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                	<ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" id="links-nav"> 
+                	<ul class="nav__links navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" id="links-nav"> 
                   		<li class="nav-item">
-                    		<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    		<a class="nav__link nav-link" aria-current="page" href="index.html">Inicio</a>
                   		</li>
                   		<li class="nav-item">
-                    		<a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+                    		<a class="nav__link nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
                   		</li>
                   		<li class="nav-item">
-                    		<a class="nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
+                    		<a class="nav__link nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
                   		</li>
                   		<li class="nav-item dropdown">
-                    		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
+                    		<a class="nav__link nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
                     		<ul class="dropdown-menu bg--color_principal" aria-labelledby="navbarDropdown">
-                      			<li><a class="dropdown-item" href="participar.html#transitar">Transitar</a></li>
-                      			<li><a class="dropdown-item" href="participar.html#ingresar_mascota">Ingresar Mascota</a></li>
-                      			<li><a class="dropdown-item" href="participar.html#donar">Donar</a></li>
+                      			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#transitar">Transitar</a></li>
+                      			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#ingresar_mascota">Ingresar Mascota</a></li>
+                      			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#donar">Donar</a></li>
                     		</ul>
                 		</li>
                 		<li class="nav-item">
-                    		<a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                    		<a class="nav__link nav-link" aria-current="page" href="contacto.html">Contacto</a>
                   		</li>
                 	</ul>
               	</div>
@@ -67,6 +67,7 @@
 
         <!-- inicia main -->
         <main class="fondo_patitas">
+            <!-- inicio denuncia maltrato animal -->
             <section class="d-flex justify-content-center">
                 <img class="img--md animacion--latido contenedor--destacado d-none d-md-block m-5" src="img/denunciar_izq.svg">
                 <article class="m-5">
@@ -77,6 +78,7 @@
                 <img class="img--md animacion--latido contenedor--destacado d-none d-md-block m-5" src="img/denunciar_der.svg">
             </section>
 
+            <!-- inicio conencta con nosotros -->
             <section class="bg--color_terciario">
                 <h1 class="titulo m-0">Conecta con nosotros</h1>
                 <section class="py-4 d-flex justify-content-center row">
@@ -99,23 +101,21 @@
                 </section>
             </section>
 
-            <section class="">
+            <!-- inicio envianos un mensaje-->
+            <section>
                 <h1 class="titulo">Envianos un mensaje</h1>
-                <form class="d-flex flex-column align-items-center my-3" id="contacto">
+                <form class="formulario d-flex flex-column align-items-center my-3" id="contacto">
                     <label class="texto--sm" for="name">Nombre:</label>
-                    <input class="formulario__input texto--sm mb-3 w-25" type="text" id="name">
+                    <input class="formulario__input texto--sm mb-3" type="text" id="name">
                     <label class="texto--sm" for="mail">Email:</label>
-                    <input class="formulario__input texto--sm mb-3 w-25" type="email" id="mail">
+                    <input class="formulario__input texto--sm mb-3" type="email" id="mail">
                     <label class="texto--sm" for="tel">Teléfono:</label>
-                    <input class="formulario__input texto--sm mb-3 w-25" type="tel" id="tel">
+                    <input class="formulario__input texto--sm mb-3" type="tel" id="tel">
                     <label class="texto--sm" for="text">Mensaje:</label>
-                    <textarea class="formulario__input texto--sm mb-3 w-25" name="" id="mensaje" cols="30" rows="10"></textarea>
+                    <textarea class="formulario__input texto--sm mb-3" name="" id="mensaje" cols="30" rows="10"></textarea>
                     <input class="btn" type="submit" value="Enviar">
                 </form>
             </section>
-
-            <!-- FAQ -->
-            
         </main>
         <!-- termina main -->
 

@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
-                <a href="index.html" class="navbar-brand" id="logo-nav">
+                <a href="index.html" class="nav__logo navbar-brand d-flex justify-content-center align-items-center" id="logo-nav">
                     <img src="img/logo.svg" alt="Logo adopcion">
                     <h2 class="d-none d-sm-block">Refugio Patitas</h2>
                 </a>
@@ -31,26 +31,26 @@
 				</button>
 				<!-- links nav -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                	<ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" id="links-nav"> 
+                	<ul class="nav__links navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" id="links-nav"> 
                   		<li class="nav-item">
-                    		<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    		<a class="nav__link nav-link" aria-current="page" href="index.html">Inicio</a>
                   		</li>
                   		<li class="nav-item">
-                    		<a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+                    		<a class="nav__link nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
                   		</li>
                   		<li class="nav-item">
-                    		<a class="nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
+                    		<a class="nav__link nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
                   		</li>
                   		<li class="nav-item dropdown">
-                    		<a class="nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
+                    		<a class="nav__link nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
                     		<ul class="dropdown-menu bg--color_principal" aria-labelledby="navbarDropdown">
-                      			<li><a class="dropdown-item" href="participar.html#transitar">Transitar</a></li>
-                      			<li><a class="dropdown-item" href="participar.html#ingresar_mascota">Ingresar Mascota</a></li>
-                      			<li><a class="dropdown-item" href="participar.html#donar">Donar</a></li>
+                      			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#transitar">Transitar</a></li>
+                      			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#ingresar_mascota">Ingresar Mascota</a></li>
+                      			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#donar">Donar</a></li>
                     		</ul>
                 		</li>
                 		<li class="nav-item">
-                    		<a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                    		<a class="nav__link nav-link" aria-current="page" href="contacto.html">Contacto</a>
                   		</li>
                 	</ul>
               	</div>
@@ -66,28 +66,46 @@
 
         <!-- inicia main -->
         <main class="fondo_patitas">
-            <section class="">
+            <!-- inicia info para participar -->
+            <section>
+                <!-- transitar -->
                 <article id="transitar" class="m-3 d-flex justify-content-center row">
                     <img class="img--xl col-lg-4" src="img/ilustraciones/transitar_con_fondo_oscuro.svg" alt="ilustracion transitar">
                     <section class="col-lg-8 order-lg-first">
                         <h1>Transitar</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque?</p>
+                        <p>
+                            Quizás no puedas adoptar un animal de compañía de forma definitiva 
+                            pero sí brindarle un lugar por un periodo de tiempo corto a un animal
+                            en tratamiento hasta su recuperación o a dos o más cachorros hasta su
+                            adopción definitiva. Justamente se trata de eso, de un hogar responsable
+                            que lo pueda cuidar transitoriamente.
+                        </p>
                         <button class="btn" alt="formulario para transitar">Formulario</button> 
                     </section>
                 </article>
+                <!-- ingresar mascota -->
                 <article id="ingresar_mascota" class="m-3 d-flex justify-content-center row">
                     <img class="img--xl col-lg-4" src="img/ilustraciones/ingresar_mascota_con_fondo_oscuro.svg" alt="ilustracion ingresar mascota">
                     <section class="col-lg-8">
                         <h1>Ingresar mascota</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque?</p>
+                        <p>
+                            Recibimos a animales abandonados que necesita atencion y un hogar.
+                            Si deseas ingresar tu mascota, para encontrarle un nuevo hogar, ponete en contacto
+                            con nosotros y juntos vamos a decidir que es lo mejor para ellos.
+                        </p>
                         <button class="btn" alt="formulario para ingresar mascota">Formulario</button>
                     </section>
                 </article>
+                <!-- donar -->
                 <article id="donar" class="m-3 d-flex justify-content-center row">
                     <img class="img--xl col-lg-4" src="img/ilustraciones/donar_con_fondo_oscuro.svg" alt="ilustracion donar">
                     <section class="col-lg-8 order-lg-first">
                         <h1>Donar</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis suscipit qui recusandae voluptatum consequuntur impedit quod, dolorem laboriosam dolorum quisquam nulla sint quaerat veritatis enim inventore. Similique, quo doloremque?</p>
+                        <p>
+                            Los aportes económicos son importantes para pagar tratamientos, estudios médicos y honorarios veterinarios,
+                            comprar insumos y alimento, financiar campañas de castración en zonas carenciadas, imprimir material de
+                            difusión entre otros. También recibimos productos que puedan ayudar a cuidar a los animales.
+                        </p>
                         <button class="btn" alt="donar">Donar</button> 
                     </section>
                 </article>
@@ -97,20 +115,20 @@
         <!-- termina main -->
 
         <!-- inicia footer -->
-		<footer class="pie d-flex flex-column align-items-center py-3">
+		<footer class = "pie d-flex flex-column align-items-center py-3">
 			<h3 class="pie__titulo">Conecta con nosotros</h3>
 			<section>
 				<a class="transformacion--sombra" href="#"> <!-- link a las redes -->
-					<img src="img/iconos_contacto/instagram.svg" alt="Seguinos en instagram" class="pie__img m-3">
+					<img src="img/iconos_contacto/instagram.svg" class="pie__img m-3" alt="Seguinos en instagram">
 				</a>
 				<a class="transformacion--sombra" href="#">
-					<img src="img/iconos_contacto/facebook.svg" alt="Seguinos en facebook" class="pie__img m-3">
+					<img src="img/iconos_contacto/facebook.svg" class="pie__img m-3" alt="Seguinos en facebook">
 				</a>
 				<a class="transformacion--sombra" href="#">
-					<img src="img/iconos_contacto/twitter.svg" alt="Seguinos en twitter" class="pie__img m-3">
+					<img src="img/iconos_contacto/twitter.svg" class="pie__img m-3" alt="Seguinos en twitter">
 				</a>
 				<a class="transformacion--sombra" href="#">
-					<img src="img/iconos_contacto/youtube.svg" alt="Suscribite a youtube" class="pie__img m-3">
+					<img src="img/iconos_contacto/youtube.svg" class="pie__img m-3" alt="Suscribite a youtube">
 				</a>  
 			</section>
 			<a href="contacto.html" class="pie__link">Contacto</a>

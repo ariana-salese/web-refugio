@@ -3,19 +3,3 @@
     width: $size;
     height: $size;
 }
-
-@mixin flex($direction, $justify, $align, $wrap){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    flex-wrap: $wrap;
-}
-
-.fondo_patitas {
-    @media screen and (min-width: 1200px) {
-        background-image: url("../img/fondos/fondo_patitas.svg");
-        background-size: cover;
-        background-attachment: fixed;
-    } 
-}

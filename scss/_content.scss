@@ -28,9 +28,13 @@ $dimensionesImagenesClases:( //va en commons? TODO
     filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801)); //TODO mixin?
 }
 
+.sombra{
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.252)); //TODO mixin?
+}
 //imagenes
 @each $clase, $dimension in $dimensionesImagenesClases {
     .#{$clase} {
         @include size($dimension);
     }
 }
+

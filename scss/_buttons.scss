@@ -1,41 +1,41 @@
 .btn, .busqueda__btn{
-    /* font */
+    // font
     font-size: $textoSm;
     color: #fff;
-    /* background */
+    // background
     background-color: $colorPrincipal;
-    /* box model */
+    // box model
     width: fit-content;
     height: fit-content;
     margin-bottom: 1rem;
     padding: 1vh 2vh;
-    /* borde y sombra */
+    // borde y sombra
     border: 2px solid $colorPrincipal;
     box-shadow: rgba(0, 0, 0, 0.42) 6px 5px 14px -2px;
     border-radius: 1rem;
-    /* transicion */
+    // transicion 
     transition : 1000ms;
     transform: translateY(0);
 }
 
 .btn:hover{
-    /* font */
+    // font
     color: $colorPrincipal;
-    /* background */
+    // background
     background-color: $colorTerciario;
-    /* box model */
+    // box model
     padding: 1vh 4vh;
-    /* borde */
+    // borde
     border: solid 2px $colorPrincipal;
-    /* transicion */
+    // transicion
     transition : 1000ms;
 }
 
 .busqueda__btn:hover{
-    /* font */
+    // font
     color: $colorPrincipal; 
-    /* background */
+    // background
     background-color: #fff;
-    /* transicion */
+    // transicion
     transition : 1000ms;
 }

@@ -31,7 +31,6 @@ $textoBold: 600;
 
 .titulo--xl{
     font-weight: $textoBold;//bold; TODO
-    font-size: $textoXl;
     background-color: $colorPrincipal;
     color:#fff;
     text-shadow: rgba(0, 0, 0, 0.344) 3px 2px 2px; //mixin? TODO
@@ -42,8 +41,10 @@ $textoBold: 600;
 
 .titulo{
     color: #fff; 
+    font-size: 2rem;
     width: $w-100;
     background-color: $colorSecundario;
+    padding-top: 5px;
 }
 
 .texto--destacado{
