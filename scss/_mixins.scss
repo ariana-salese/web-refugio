@@ -1,5 +1,11 @@
 
-@mixin size($size){ //TODO usar esto y no las clases?
+@mixin size($size){ 
     width: $size;
     height: $size;
 }
+
+// @mixin texto($font-size:null, $font-weight:null, $color:null) {
+//     font-size: $font-size;
+//     font-weight: $font-weight;
+//     color: $color;
+// }

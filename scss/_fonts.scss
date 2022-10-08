@@ -5,6 +5,7 @@ $fontPrincipal: 'Josefin Sans', sans-serif;
 //fontsize
 $textoSm: 1.2rem;
 $textoMd: 1.5rem;
+$textoLg: 2rem;
 $textoXl: 2.5rem;
 $textoXxl: 3rem;
 
@@ -17,42 +18,41 @@ $fontsizesTags:(
 );
 
 $fontsizesClases:(
-    texto--sm: 1.2rem,
-    texto--md: 1.5rem,
-    texto--lg: 2rem,
-    texto--xl: 2.5rem,
-    texto--xxl: 3rem
+    texto--sm: $textoSm,
+    texto--md: $textoMd,
+    texto--lg: $textoLg,
+    texto--xl: $textoXl,
+    texto--xxl: $textoXxl
 );
 
 //fontweight
 $textoRegular: 400;
-// $textoLight: 300;
 $textoBold: 600;
 
 .titulo--xl{
-    font-weight: $textoBold;//bold; TODO
+    font-weight: $textoBold;
     background-color: $colorPrincipal;
-    color:#fff;
-    text-shadow: rgba(0, 0, 0, 0.344) 3px 2px 2px; //mixin? TODO
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.344) 3px 2px 2px; 
     border-top: 2px solid $colorTerciario;
     padding-top: 0.2em;
     margin: 0;
 }
 
 .titulo{
-    color: #fff; 
-    font-size: 2rem;
-    width: $w-100;
+    font-size: $textoLg;
+    color: #fff;
+    width: 100%;
     background-color: $colorSecundario;
     padding-top: 5px;
 }
 
 .texto--destacado{
     font-size: $textoXxl;
-    font-weight: $textoBold; //FUNCA? TODO
+    font-weight: $textoBold; 
 }
 
-@each $tag, $fontsize in $fontsizesTags { //TODO hacer mixin con esto?
+@each $tag, $fontsize in $fontsizesTags { 
     #{$tag} {
       font-size: $fontsize;
     }

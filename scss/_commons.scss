@@ -1,10 +1,9 @@
-//variables
+//paleta de colores
 $colorPrincipal: #466e35;
 $colorSecundario: #698a5c; 
 $colorTerciario: #d5e0ce;
 $colorNeutro: #eaeaea;
 
-//paleta de colores
 $coloresFondoClases:(
     bg--color_principal: $colorPrincipal, 
     bg--color_secundario: $colorSecundario, 
@@ -12,8 +11,22 @@ $coloresFondoClases:(
     bg--color_neutro: $colorNeutro
 );
 
-//sizing
-$w-100:100%;
+//tamanio imagenes
+$imgXs: 2.2rem;
+$imgSm: 5rem;
+$imgMd: 10rem;
+$imgLg: 16rem;
+$imgXl: 20rem;
+$imgXxl: 25rem;
+
+$dimensionesImagenesClases:( 
+    img--xs: $imgXs,
+    img--sm: $imgSm,
+    img--md: $imgMd,
+    img--lg: $imgLg,
+    img--xl: $imgXl,
+    img--xxl: $imgXxl
+);
 
 *{
     font-family: 'Josefin Sans', sans-serif;
@@ -28,16 +41,40 @@ body {
     font-size: 62.5%;
 }
 
+//imagenes
 @each $clase, $color in $coloresFondoClases {
     .#{$clase} {
         background-color: $color;
     }
 }
 
+//fondo
 .fondo_patitas {
     @media screen and (min-width: 1000px) {
         background-image: url("../img/fondos/fondo_patitas.svg");
         background-size: cover;
         background-attachment: fixed;
     } 
+}
+
+//divisores
+.divisor{
+    border-top: 2px solid $colorPrincipal;
+}
+
+//contenedores
+.contenedor--destacado{
+    border-radius: 3.3rem;
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801)); 
+}
+
+.sombra{
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.252)); 
+}
+
+//imagenes
+@each $clase, $dimension in $dimensionesImagenesClases {
+    .#{$clase} {
+        @include size($dimension);
+    }
 }
