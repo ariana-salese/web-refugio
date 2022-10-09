@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab:wght@600&display=swap');
 
-$fontPrincipal: 'Josefin Sans', sans-serif;
-
 //fontsize
 $textoSm: 1.2rem;
 $textoMd: 1.5rem;
-$textoLg: 2rem;
+$textoLg: 1.8rem;
 $textoXl: 2.5rem;
 $textoXxl: 3rem;
 
 $fontsizesTags:(
-    h1: 2.5rem,
-    h2: 1.7rem,
-    h3: 1.5rem,
-    h4: 1.2rem,
+    h1: $textoXxl,
+    h2: $textoXl,
+    h3: $textoLg,
+    h4: $textoMd,
+    h5: $textoSm,
     p: 1.3rem,
 );
 
@@ -40,7 +39,6 @@ $textoBold: 600;
 }
 
 .titulo{
-    font-size: $textoLg;
     color: #fff;
     width: 100%;
     background-color: $colorSecundario;

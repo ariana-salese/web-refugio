@@ -90,7 +90,6 @@ body {
 }
 
 .titulo {
-  font-size: 2rem;
   color: #fff;
   width: 100%;
   background-color: #698a5c;
@@ -103,18 +102,22 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
   font-size: 1.2rem;
 }
 
@@ -131,7 +134,7 @@ p {
 }
 
 .texto--lg {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .texto--xl {
