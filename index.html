@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
-                <a href="index.html" class="nav__logo navbar-brand d-flex justify-content-center align-items-center" id="logo-nav">
+                <a href="index.html" class="nav__logo navbar-brand">
                     <img src="img/logo.svg" alt="Logo adopcion">
                     <h3 class="d-none d-sm-block">Refugio Patitas</h3>
                 </a>
@@ -35,24 +35,29 @@
 				</button>
 				<!-- links nav -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                	<ul class="nav__links navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" id="links-nav"> 
-                  		<li class="nav-item">
+                	<ul class="flex--center navbar-nav ms-auto mb-2 mb-lg-0" id="links-nav"> 
+                  		<!-- Inicio -->
+                        <li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="index.html">Inicio</a>
                   		</li>
+                        <!-- Nosotros -->
                   		<li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
                   		</li>
+                        <!-- Adoptar -->
                   		<li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
                   		</li>
+                        <!-- Participar -->
                   		<li class="nav-item dropdown">
                     		<a class="nav__link nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
-                    		<ul class="dropdown-menu bg--color_principal" aria-labelledby="navbarDropdown">
+                    		<ul class="bg--color_principal dropdown-menu" aria-labelledby="navbarDropdown">
                       			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#transitar">Transitar</a></li>
                       			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#ingresar_mascota">Ingresar Mascota</a></li>
                       			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#donar">Donar</a></li>
                     		</ul>
                 		</li>
+                        <!-- Contacto -->
                 		<li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="contacto.html">Contacto</a>
                   		</li>
@@ -64,24 +69,24 @@
 
 		<!-- inicia header -->
         <header class="header_index">
-            <div class="header_index__texto d-flex flex-column justify-content-center p-3 mx-lg-5">
+            <div class="header_index__texto p-3 mx-lg-5">
 				<h1 class="animacion--entrada_texto texto--md">Bienvenidos al Refugio Patitas</h1>
-				<p class="texto--destacado animacion--entrada_texto mx-2 mx-lg-5">Nuestros compañeros perfectos nunca tienen menos de cuatro patas</p>
+				<p class="animacion--entrada_texto texto--destacado mx-2 mx-lg-5">Nuestros compañeros perfectos nunca tienen menos de cuatro patas</p>
 			</div>
         </header>
         <!-- termina header -->
 
 		<!-- inicia main -->
 		<main class="fondo_patitas">
-			<!-- inicia adopcion // bootstrap -->
-			<section id="carusel" data-bs-interval="5000" class="carousel slide bg--color_terciario" data-bs-ride="carousel" >
+			<!-- inicia adopcion -->
+			<section id="carusel" data-bs-interval="5000" class="carousel slide" data-bs-ride="carousel">
 				<!-- titulo -->
 				<h2 class="titulo">¿Querés adoptar?</h2>
 				<!-- carusel -->
 				<section class="carousel-inner" id="carusel">
 					<!-- slide 1 carusel -->
 				  	<article class="carousel-item active"> 
-						<div class="d-flex align-items-center justify-content-center row">
+						<div class="flex--center row">			<!-- TODO crear carusel__img? -->
 							<img src="img/animales/thor.jpg" class="img--xl contenedor--destacado m-3 d-block col-lg-4" alt="foto thor">
 							<article class="col-lg-8 pe-xl-5">
 								<h3><strong>Thor</strong></h3> 
@@ -95,7 +100,7 @@
 				  	</article>
 					<!-- slide 2 carusel -->
 				  	<article class="carousel-item">
-						<div class="d-flex align-items-center justify-content-center row">
+						<div class="flex--center row">
 							<img src="img/animales/loki.jpg" class="img--xl contenedor--destacado m-3 d-block col-lg-4" alt="foto loki">
 							<article class="col-lg-8 pe-xl-5">
 								<h3><strong>Loki</strong></h3> 
@@ -109,7 +114,7 @@
 				  	</article>
 					<!-- slide 3 carusel -->
 				  	<article class="carousel-item">
-						<div class="d-flex align-items-center justify-content-center row">
+						<div class="flex--center row">
 							<img src="img/animales/milo.jpg" class="img--xl contenedor--destacado m-3 d-block col-lg-4" alt="foto milo">
 							<article class="col-lg-8 pe-xl-5">
 								<h3><strong>Milo</strong></h3> 
@@ -132,27 +137,27 @@
 			<!-- termina adopcion -->
 			
 			<!-- inicia participacion -->
-			<section  class="d-flex flex-column align-items-center">
+			<section  class="flex--center--col">
 				<h2 class="titulo">¿Cómo participar?</h2>
 				<section class="py-3 row">
 					<!-- transitar -->
 					<a href="participar.html#transitar" class="m-1 m-lg-4 col">
 						<figure class="transformacion--escalar">
-							<img class="img--lg" src="img/ilustraciones/transitar_fondo_claro.svg" alt="Transitar">
+							<img class="img--lg" src="img/ilustraciones/transitar_con_fondo_oscuro.svg" alt="Transitar">
 							<figcaption class="texto--md">Transitar</figcaption>
 						</figure>
 					</a>
 					<!-- ingresar mascota -->
 					<a href="participar.html#ingresar_mascota" class="m-1 m-lg-4 col">
 						<figure class="transformacion--escalar">
-							<img class="img--lg" src="img/ilustraciones/ingresar_mascota_fondo_claro.svg" alt="Ingresar mascota">
+							<img class="img--lg" src="img/ilustraciones/ingresar_mascota_con_fondo_oscuro.svg" alt="Ingresar mascota">
 							<figcaption class="texto--md">Ingresar mascota</figcaption>
 						</figure>
 					</a>
 					<!-- donar -->
 					<a href="participar.html#donar" class="m-1 m-lg-4 col">
 						<figure class="transformacion--escalar">
-							<img class="img--lg" src="img/ilustraciones/donar_fondo_claro.svg" alt="Donar">
+							<img class="img--lg" src="img/ilustraciones/donar_con_fondo_oscuro.svg" alt="Donar">
 							<figcaption class="texto--md">Donar</figcaption>
 						</figure>
 					</a>
@@ -163,22 +168,47 @@
 				</form>
 			</section>
 			<!-- termina participacion -->
+
+			<!-- inicia informate sobre castracion -->
+			<section class="bg--color_terciario flex--center row">
+				<h2 class="titulo col-12">Informate sobre la castración</h2>
+				<img class="img--xl col-12 col-lg-4" src="img/ilustraciones/abandono.svg" alt="Ilustracion perro abandonado">
+				<article class="flex--center px-5 col-12 col-lg-8">
+					<div class="col-12">
+						<p>
+							La castración es la única y mejor manera de mantener controlada
+							la población animal, además de ayudar a evitar problemas de salud a tu 
+							mascota.
+						</p>
+						<!-- boton -->
+						<form action="adoptar.html#castracion">
+							<input class="btn" type="submit" value="Conocé más">
+						</form>
+					</div>
+				</article>
+			</section>
+			<!-- termina informate sobre castracion -->
+
 		</main>
 		<!-- termina main -->
 
 		<!-- inicia footer -->
-		<footer class = "pie d-flex flex-column align-items-center py-3">
+		<footer class = "pie py-3">
 			<h4 class="pie__titulo">Conecta con nosotros</h4>
 			<section>
+				<!-- Instagram -->
 				<a class="transformacion--sombra" href="#"> <!-- link a las redes -->
 					<img src="img/iconos_contacto/instagram.svg" class="pie__img m-3" alt="Seguinos en instagram">
 				</a>
+				<!-- Facebook -->
 				<a class="transformacion--sombra" href="#">
 					<img src="img/iconos_contacto/facebook.svg" class="pie__img m-3" alt="Seguinos en facebook">
 				</a>
+				<!-- Twitter -->
 				<a class="transformacion--sombra" href="#">
 					<img src="img/iconos_contacto/twitter.svg" class="pie__img m-3" alt="Seguinos en twitter">
 				</a>
+				<!-- Youtube -->
 				<a class="transformacion--sombra" href="#">
 					<img src="img/iconos_contacto/youtube.svg" class="pie__img m-3" alt="Suscribite a youtube">
 				</a>  

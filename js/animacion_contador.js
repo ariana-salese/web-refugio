@@ -4,19 +4,17 @@ function animacion_contador(obj, start, end, duration) {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       obj.innerHTML = Math.floor(progress * (end - start) + start);
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
+      if (progress < 1)  window.requestAnimationFrame(step);
     };
     window.requestAnimationFrame(step);
 }
 
 const observer = new IntersectionObserver(entries => {
-    // Loop over the entries
+    // Por cada entrada
     entries.forEach(entry => {
-        // If the element is visible
+        // Si el elemento es visible
         if (entry.isIntersecting) {
-            // Add the animation class
+            // Aplicar animacion contador
             contador = entry.target;
             if (contador.id == "contador_transitos_realizados") { animacion_contador(contador, 0, 132, 3000)}
             else if (contador.id == "contador_adopciones") { animacion_contador(contador, 0, 215, 3000)}

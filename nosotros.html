@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
-                <a href="index.html" class="nav__logo navbar-brand d-flex justify-content-center align-items-center" id="logo-nav">
+                <a href="index.html" class="nav__logo navbar-brand">
                     <img src="img/logo.svg" alt="Logo adopcion">
                     <h3 class="d-none d-sm-block">Refugio Patitas</h3>
                 </a>
@@ -35,24 +35,29 @@
 				</button>
 				<!-- links nav -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                	<ul class="nav__links navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" id="links-nav"> 
-                  		<li class="nav-item">
+                	<ul class="flex--center navbar-nav ms-auto mb-2 mb-lg-0" id="links-nav"> 
+                  		<!-- Inicio -->
+                        <li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="index.html">Inicio</a>
                   		</li>
+                        <!-- Nosotros -->
                   		<li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
                   		</li>
+                        <!-- Adoptar -->
                   		<li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
                   		</li>
+                        <!-- Participar -->
                   		<li class="nav-item dropdown">
                     		<a class="nav__link nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
-                    		<ul class="dropdown-menu bg--color_principal" aria-labelledby="navbarDropdown">
+                    		<ul class="bg--color_principal dropdown-menu" aria-labelledby="navbarDropdown">
                       			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#transitar">Transitar</a></li>
                       			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#ingresar_mascota">Ingresar Mascota</a></li>
                       			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#donar">Donar</a></li>
                     		</ul>
                 		</li>
+                        <!-- Contacto -->
                 		<li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="contacto.html">Contacto</a>
                   		</li>
@@ -71,9 +76,9 @@
         <!-- inicia main -->
         <main class="fondo_patitas">
             <!-- inicia historia y mision -->
-            <section class="d-flex flex-column align-items-center">
+            <section class="flex--align_center--col">
                 <!-- historia -->
-                <article class="row d-flex justify-content-center align-items-center mt-4">
+                <article class="row flex--center mt-4">
                     <section class="col-md-6">
                         <h2>Historia</h2>
                         <p class="mx-2">
@@ -86,7 +91,7 @@
                     <img class="img--xl col-md-6" src="img/ilustraciones/historia.svg" alt="ilustracion historia">
                 </article>
                 <!-- mision -->
-                <article class="row d-flex justify-content-center align-items-center mb-4">
+                <article class="row flex--center mb-4">
                     <section class="col-md-6 order-md-5">
                         <h2>Misión</h2>
                         <p class="mx-2">
@@ -100,16 +105,28 @@
             </section>
             <!-- termina historia y mision -->
 
+            <!-- inicia nuestros objetivos -->
+            <section class="bg--color_terciario divisor">
+                <h3 class="titulo--sm pt-3 m-0">Nuestros objetivos</h3>
+                <ul class="lista m-0 p-0 pb-4">
+                    <li>Luchar contra el abandono, el maltrato y el sufrimiento animal.</li>
+                    <li>Asistir a animales en situación de riesgo de muerte, brindarles la atención médica necesaria para recuperarlos y encontrar familias responsables para su adopción.</li>
+                    <li>Asesorar a la población respecto a cómo actuar en casos de maltrato animal.</li>
+                    <li>Concientizar sobre la importancia de las castraciones masivas, gratuitas, sistemáticas y extensivas como único método ético de control de la superpoblación animal</li>
+                </ul>
+            </section>
+            <!-- termina nuestros objetivos -->
+
             <!-- inicia galeria familias -->
             <section class="bg--color_terciario">
                <h2 class="titulo">¡Familias felices!</h2>
                <!-- familias -->
-               <section class="d-flex justify-content-around row">
+               <section class="flex--justify_around row">
                     <!-- familia 1 -->
                    <figure class="py-3 col-sm-12 col-md-6 col-xl-3"> 
                         <div class="wrapper__img d-inline-block">
                             <img class="img--lg contenedor--destacado" src="img/familias/familia_diaz.jpg" alt="familia Diaz">
-                            <div class="wrapper__img__descripcion d-flex justify-content-center align-items-center">
+                            <div class="wrapper__img__descripcion">
                                 <p>
                                     Duna, la perrita más tranquilo del mundo, se sumó a la familia Díaz donde esta acompañada y 
                                     cuidada por Norma, con quien mira chimentos todo el día.
@@ -122,7 +139,7 @@
                     <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
                         <div class="wrapper__img d-inline-block">
                             <img class="img--lg contenedor--destacado" src="img/familias/familia_lotito.jpg" alt="familia Lotito">
-                            <div class="wrapper__img__descripcion d-flex justify-content-center align-items-center">
+                            <div class="wrapper__img__descripcion">
                                 <p>
                                     Zoe adoptó al juguetón Muni hace más de un año, desde entonces se pasan todos 
                                     los findes en los boqués de palermo.
@@ -135,7 +152,7 @@
                     <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
                         <div class="wrapper__img d-inline-block">
                             <img class="img--lg contenedor--destacado" src="img/familias/familia_halac.jpg" alt="familia Halac">
-                            <div class="wrapper__img__descripcion d-flex justify-content-center align-items-center">
+                            <div class="wrapper__img__descripcion">
                                 <p>
                                     Tomás y Roco son inseparables, salen hasta andar en roller juntos y comparten lindos
                                     momentos con la familia Lotito.
@@ -148,7 +165,7 @@
                     <figure class="py-3 col-sm-12 col-md-6 col-xl-3">
                         <div class="wrapper__img d-inline-block">
                             <img class="img--lg contenedor--destacado" src="img/familias/familia_salese.jpg" alt="familia Vega">
-                            <div class="wrapper__img__descripcion d-flex justify-content-center align-items-center">
+                            <div class="wrapper__img__descripcion">
                                 <p>
                                     Desde que Bingo se unio a la familia Salese pasa todos sus días jugando
                                     y creciendo junto a ellos.
@@ -162,7 +179,7 @@
             <!-- termina galeria familias -->
 
             <!-- inicio estadisticas -->
-            <section class="divisor d-flex justify-content-center row">
+            <section class="divisor flex--justify_center row">
                 <!-- cantidad de transitos -->
                 <article class="col m-5">
                     <img class="img--sm" src="img/iconos_estadisticas/icono_transitos.svg" alt="transitos realizados">
@@ -188,18 +205,22 @@
         <!-- termina main -->
 
 		<!-- inicia footer -->
-		<footer class = "pie d-flex flex-column align-items-center py-3">
-			<h5 class="pie__titulo">Conecta con nosotros</h5>
+		<footer class = "pie py-3">
+			<h4 class="pie__titulo">Conecta con nosotros</h4>
 			<section>
+				<!-- Instagram -->
 				<a class="transformacion--sombra" href="#"> <!-- link a las redes -->
 					<img src="img/iconos_contacto/instagram.svg" class="pie__img m-3" alt="Seguinos en instagram">
 				</a>
+				<!-- Facebook -->
 				<a class="transformacion--sombra" href="#">
 					<img src="img/iconos_contacto/facebook.svg" class="pie__img m-3" alt="Seguinos en facebook">
 				</a>
+				<!-- Twitter -->
 				<a class="transformacion--sombra" href="#">
 					<img src="img/iconos_contacto/twitter.svg" class="pie__img m-3" alt="Seguinos en twitter">
 				</a>
+				<!-- Youtube -->
 				<a class="transformacion--sombra" href="#">
 					<img src="img/iconos_contacto/youtube.svg" class="pie__img m-3" alt="Suscribite a youtube">
 				</a>  

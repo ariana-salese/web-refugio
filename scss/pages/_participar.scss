@@ -1,0 +1,22 @@
+//comprar y donar
+.compras__contenedor{
+    @extend .bg--color_terciario;
+    @extend .flex--justify_around;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px){
+        border-left: 2px solid $colorPrincipal;
+    }
+
+    @media screen and (max-width: 1200px){
+        border-top: 2px solid $colorPrincipal;
+    }
+}
+
+.compras__carta {
+    @extend .sombra--dark;
+    @extend .flex--center;
+    border: .5px solid $colorPrincipal;
+    border-radius: 10px;
+    width: 18rem;
+}

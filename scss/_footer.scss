@@ -1,9 +1,10 @@
 .pie{
-    background-color: $colorPrincipal;
+    @extend .flex--center--col;
+    @extend .bg--color_principal;
 }
 
 .pie__img{
-    @include size($imgXs);
+    @extend .img--xs;
     border-radius: 100%;
     transition: all 0.5s;
 }

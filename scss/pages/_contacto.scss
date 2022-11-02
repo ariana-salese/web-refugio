@@ -1,14 +1,15 @@
+//envianos un mensaje
 .formulario__input{
-    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.251));
+    @extend .texto--sm;
     border-radius:0.5rem;
     border: 1px solid $colorPrincipal;
     width: 90%;
 
     &:focus{
-        background-color: $colorNeutro;
+        @extend .bg--color_neutro;
     }
 
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: 400px){
         width: 22rem;
     }
 }

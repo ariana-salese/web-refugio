@@ -8,12 +8,14 @@
 }
 
 .header_index__texto{
+    @extend .flex--center--col;
     color: #fff;
     height: 100%;
 }
 
 //carusel
 #carusel {
+    @extend .bg--color_terciario;
     .carusel__indicadores{
         position: static;
     }

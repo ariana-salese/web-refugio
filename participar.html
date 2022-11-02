@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
 			<div class="container-fluid">
 				<!-- logo -->
-                <a href="index.html" class="nav__logo navbar-brand d-flex justify-content-center align-items-center" id="logo-nav">
+                <a href="index.html" class="nav__logo navbar-brand">
                     <img src="img/logo.svg" alt="Logo adopcion">
                     <h3 class="d-none d-sm-block">Refugio Patitas</h3>
                 </a>
@@ -34,24 +34,29 @@
 				</button>
 				<!-- links nav -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                	<ul class="nav__links navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center" id="links-nav"> 
-                  		<li class="nav-item">
+                	<ul class="flex--center navbar-nav ms-auto mb-2 mb-lg-0" id="links-nav"> 
+                  		<!-- Inicio -->
+                        <li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="index.html">Inicio</a>
                   		</li>
+                        <!-- Nosotros -->
                   		<li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
                   		</li>
+                        <!-- Adoptar -->
                   		<li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="adoptar.html">Adoptar</a>
                   		</li>
+                        <!-- Participar -->
                   		<li class="nav-item dropdown">
                     		<a class="nav__link nav-link dropdown-toggle" href="participar.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown"  aria-expanded="false">Participar</a>
-                    		<ul class="dropdown-menu bg--color_principal" aria-labelledby="navbarDropdown">
+                    		<ul class="bg--color_principal dropdown-menu" aria-labelledby="navbarDropdown">
                       			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#transitar">Transitar</a></li>
                       			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#ingresar_mascota">Ingresar Mascota</a></li>
                       			<li><a class="nav__link nav__dropdown dropdown-item" href="participar.html#donar">Donar</a></li>
                     		</ul>
                 		</li>
+                        <!-- Contacto -->
                 		<li class="nav-item">
                     		<a class="nav__link nav-link" aria-current="page" href="contacto.html">Contacto</a>
                   		</li>
@@ -68,68 +73,97 @@
         <!-- termina header -->
 
         <!-- inicia main -->
-        <main class="fondo_patitas">
+        <main >
             <!-- inicia info para participar -->
-            <section>
-                <!-- transitar -->
-                <article id="transitar" class="m-3 d-flex justify-content-center row">
-                    <img class="img--xl col-lg-4" src="img/ilustraciones/transitar_con_fondo_oscuro.svg" alt="ilustracion transitar">
-                    <section class="col-lg-8 order-lg-first">
-                        <h2>Transitar</h2>
-                        <p>
-                            Quizás no puedas adoptar un animal de compañía de forma definitiva 
-                            pero sí brindarle un lugar por un periodo de tiempo corto a un animal
-                            en tratamiento hasta su recuperación o a dos o más cachorros hasta su
-                            adopción definitiva. Justamente se trata de eso, de un hogar responsable
-                            que lo pueda cuidar transitoriamente.
-                        </p>
-                        <button class="btn" alt="formulario para transitar">Formulario</button> 
-                    </section>
-                </article>
-                <!-- ingresar mascota -->
-                <article id="ingresar_mascota" class="m-3 d-flex justify-content-center row">
-                    <img class="img--xl col-lg-4" src="img/ilustraciones/ingresar_mascota_con_fondo_oscuro.svg" alt="ilustracion ingresar mascota">
-                    <section class="col-lg-8">
-                        <h2>Ingresar mascota</h2>
-                        <p>
-                            Recibimos a animales abandonados que necesita atencion y un hogar.
-                            Si deseas ingresar tu mascota, para encontrarle un nuevo hogar, ponete en contacto
-                            con nosotros y juntos vamos a decidir que es lo mejor para ellos.
-                        </p>
-                        <button class="btn" alt="formulario para ingresar mascota">Formulario</button>
-                    </section>
-                </article>
-                <!-- donar -->
-                <article id="donar" class="m-3 d-flex justify-content-center row">
-                    <img class="img--xl col-lg-4" src="img/ilustraciones/donar_con_fondo_oscuro.svg" alt="ilustracion donar">
-                    <section class="col-lg-8 order-lg-first">
-                        <h2>Donar</h2>
-                        <p>
-                            Los aportes económicos son importantes para pagar tratamientos, estudios médicos y honorarios veterinarios,
-                            comprar insumos y alimento, financiar campañas de castración en zonas carenciadas, imprimir material de
-                            difusión entre otros. También recibimos productos que puedan ayudar a cuidar a los animales.
-                        </p>
-                        <button class="btn" alt="donar">Donar</button> 
-                    </section>
-                </article>
+            <section class="row">
+                <section class="col-12 col-xl-9">
+                    <!-- transitar -->
+                    <article id="transitar" class="flex--center m-3 row">
+                        <img class="img--lg col-lg-4" src="img/ilustraciones/transitar_con_fondo_oscuro.svg" alt="ilustracion transitar">
+                        <section class="col-lg-8 order-lg-first">
+                            <h2>Transitar</h2>
+                            <p>
+                                Quizás no puedas adoptar un animal de compañía de forma definitiva 
+                                pero sí brindarle un lugar por un periodo de tiempo corto a un animal
+                                en tratamiento hasta su recuperación o a dos o más cachorros hasta su
+                                adopción definitiva. Justamente se trata de eso, de un hogar responsable
+                                que lo pueda cuidar transitoriamente.
+                            </p>
+                            <button class="btn" alt="formulario para transitar">Formulario</button> 
+                        </section>
+                    </article>
+                    <!-- ingresar mascota -->
+                    <article id="ingresar_mascota" class="flex--center m-3 row">
+                        <img class="img--lg col-lg-4" src="img/ilustraciones/ingresar_mascota_con_fondo_oscuro.svg" alt="ilustracion ingresar mascota">
+                        <section class="col-lg-8">
+                            <h2>Ingresar mascota</h2>
+                            <p>
+                                Recibimos a animales abandonados que necesita atencion y un hogar.
+                                Si deseas ingresar tu mascota, para encontrarle un nuevo hogar, ponete en contacto
+                                con nosotros y juntos vamos a decidir que es lo mejor para ellos.
+                            </p>
+                            <button class="btn" alt="formulario para ingresar mascota">Formulario</button>
+                        </section>
+                    </article>
+                    <!-- donar -->
+                    <article id="donar" class="flex--center m-3 row">
+                        <img class="img--lg col-lg-4" src="img/ilustraciones/donar_con_fondo_oscuro.svg" alt="ilustracion donar">
+                        <section class="col-lg-8 order-lg-first">
+                            <h2>Donar</h2>
+                            <p>
+                                Los aportes económicos son importantes para pagar tratamientos, estudios médicos y honorarios veterinarios,
+                                comprar insumos y alimento, financiar campañas de castración en zonas carenciadas, imprimir material de
+                                difusión entre otros. También recibimos productos que puedan ayudar a cuidar a los animales.
+                            </p>
+                            <button class="btn" alt="donar">Donar</button> 
+                        </section>
+                    </article>
+                </section>
+                <!-- comprar y donar -->
+                <section class="compras__contenedor col-12 col-xl-3">
+                    <div class="compras__carta card my-3 mx-2">
+                        <img class="img--md sombra--dark card-img-top" src="img/iconos_comprar_y_donar/comida.svg" alt="Icono comida">
+                        <div class="card-body">
+                            <h5 class="card-title">Comida</h5>
+                            <a href="#" class="btn btn-primary">comprar y donar</a>
+                        </div>
+                    </div>
+                    <div class="compras__carta card my-3 mx-2">
+                        <img class="img--md sombra--dark card-img-top" src="img/iconos_comprar_y_donar/medicamentos.svg" alt="Icono medicamentos">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicamentos</h5>
+                            <a href="#" class="btn btn-primary">comprar y donar</a>
+                        </div>
+                    </div>
+                    <div class="compras__carta card my-3 mx-2">
+                        <img class="img--md sombra--dark card-img-top" src="img/iconos_comprar_y_donar/juguetes.svg" alt="Icono juguetes">
+                        <div class="card-body">
+                            <h5 class="card-title">Jueguetes</h5>
+                            <a href="#" class="btn btn-primary">comprar y donar</a>
+                        </div>
+                    </div>
+                </section>
             </section>
-
         </main>
         <!-- termina main -->
 
         <!-- inicia footer -->
-		<footer class = "pie d-flex flex-column align-items-center py-3">
-			<h5 class="pie__titulo">Conecta con nosotros</h5>
+		<footer class = "pie py-3">
+			<h4 class="pie__titulo">Conecta con nosotros</h4>
 			<section>
+				<!-- Instagram -->
 				<a class="transformacion--sombra" href="#"> <!-- link a las redes -->
 					<img src="img/iconos_contacto/instagram.svg" class="pie__img m-3" alt="Seguinos en instagram">
 				</a>
+				<!-- Facebook -->
 				<a class="transformacion--sombra" href="#">
 					<img src="img/iconos_contacto/facebook.svg" class="pie__img m-3" alt="Seguinos en facebook">
 				</a>
+				<!-- Twitter -->
 				<a class="transformacion--sombra" href="#">
 					<img src="img/iconos_contacto/twitter.svg" class="pie__img m-3" alt="Seguinos en twitter">
 				</a>
+				<!-- Youtube -->
 				<a class="transformacion--sombra" href="#">
 					<img src="img/iconos_contacto/youtube.svg" class="pie__img m-3" alt="Suscribite a youtube">
 				</a>  

@@ -28,6 +28,7 @@ $dimensionesImagenesClases:(
     img--xxl: $imgXxl
 );
 
+//general
 *{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -50,7 +51,7 @@ body {
 
 //fondo
 .fondo_patitas {
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1500px) {
         background-image: url("../img/fondos/fondo_patitas.svg");
         background-size: cover;
         background-attachment: fixed;
@@ -58,18 +59,30 @@ body {
 }
 
 //divisores
-.divisor{
+.divisor--top{
     border-top: 2px solid $colorPrincipal;
 }
 
-//contenedores
-.contenedor--destacado{
-    border-radius: 3.3rem;
-    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801)); 
+.divisor--left{
+    border-left: 2px solid $colorPrincipal;
 }
 
-.sombra{
-    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.252)); 
+.divisor--bottom{
+    border-bottom: 2px solid $colorPrincipal;
+}
+
+//contenedores
+.sombra--dark{
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.275));  
+}
+
+.sombra--light{
+    filter: drop-shadow(5px 5px 5px rgb(149, 149, 149));;
+}
+
+.contenedor--destacado{
+    @extend .sombra--dark;
+    border-radius: 3.3rem;
 }
 
 //imagenes
@@ -78,3 +91,72 @@ body {
         @include size($dimension);
     }
 }
+
+//listas
+.lista {
+    li {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        list-style: disc inside url('../img/vinietas/flecha.png');;
+    }
+}
+
+//flex
+.flex--center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--center--col{
+    @extend .flex--center;
+    flex-direction: column;
+}
+
+.flex--justify_center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex--justify_around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex--justify_between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex--align_center--col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// .flex--align_center--justify_between{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// } TODO
+
+//scrollbar TODO que funcione en todos o sacar
+// //width
+// ::-webkit-scrollbar {
+//     width: 8px;
+//     margin: 0;
+// }
+  
+// //Track
+// ::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 5px $colorNeutro;
+// }
+  
+// // Handle 
+// ::-webkit-scrollbar-thumb {
+//     background: $colorSecundario;
+//     border-radius: 10px;
+//     box-shadow: inset 0 0 3px black;
+// }

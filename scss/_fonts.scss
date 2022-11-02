@@ -38,11 +38,17 @@ $textoBold: 600;
     margin: 0;
 }
 
-.titulo{
+.titulo{ //titulo--md TODO
     color: #fff;
     width: 100%;
     background-color: $colorSecundario;
     padding-top: 5px;
+}
+
+.titulo--sm{
+    color: $colorPrincipal;
+    width: 100%;
+    font-weight: $textoBold;
 }
 
 .texto--destacado{

@@ -1,6 +1,6 @@
 //requisitos
 .lista--tick{
-    list-style: disc inside url('../img/tick.png');
+    list-style: disc inside url('../img/vinietas/tick.png');
     li{
         text-align: start;
         font-size: $textoSm;
@@ -9,8 +9,11 @@
 
 //animales en adopcion
 .filtro{
+    @extend .bg--color_terciario;
+    @extend .flex--justify_around;
+    @extend .divisor--bottom;
+    flex-wrap: wrap;
     grid-area: filtros;
-    border-bottom: 2px solid $colorPrincipal;
 }
 
 .filtro__opciones{
@@ -19,10 +22,14 @@
 }
 
 .galeria_animales{
+    @extend .flex--justify_around;
     grid-area: galeria_animales;
 }
 
 .galeria_animales__animal{
+    @extend .transformacion--escalar;
+    @extend .bg--color_neutro;
+    @extend .flex--align_center--col;
     width: 18rem;
     border-radius: 10px;
     filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.648));
@@ -30,14 +37,17 @@
 }
 
 .galeria_animales__detalles{
+    @extend .flex--justify_between;
     width: 15rem;
 }
 
 .galeria_animales__img{
+    @extend .img--lg;
     border-radius: 10px;
 }
 
 .galeria_animales__boton_paginas{
+    @extend .flex--justify_center;
     ul li a{
         border: 1px solid $colorPrincipal;
     }
@@ -52,6 +62,8 @@
 }
 
 .indice_caracteristicas{
+    @extend .bg--color_terciario;
+    @extend .flex--center;
     grid-area: indice_caracteristicas;
     border-top: 2px solid $colorPrincipal;
 

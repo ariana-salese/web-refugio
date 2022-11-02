@@ -12,7 +12,7 @@ body {
   font-size: 62.5%;
 }
 
-.bg--color_principal {
+.bg--color_principal, .pie, #nav {
   background-color: #466e35;
 }
 
@@ -20,15 +20,15 @@ body {
   background-color: #698a5c;
 }
 
-.bg--color_terciario {
+.bg--color_terciario, .compras__contenedor, .indice_caracteristicas, .filtro, #carusel {
   background-color: #d5e0ce;
 }
 
-.bg--color_neutro {
+.bg--color_neutro, .formulario__input:focus, .galeria_animales__animal {
   background-color: #eaeaea;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1500px) {
   .fondo_patitas {
     background-image: url("../img/fondos/fondo_patitas.svg");
     background-size: cover;
@@ -36,20 +36,31 @@ body {
   }
 }
 
-.divisor {
+.divisor--top {
   border-top: 2px solid #466e35;
+}
+
+.divisor--left {
+  border-left: 2px solid #466e35;
+}
+
+.divisor--bottom, .filtro {
+  border-bottom: 2px solid #466e35;
+}
+
+.sombra--dark, .compras__carta, .contenedor--destacado {
+  filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.275));
+}
+
+.sombra--light {
+  filter: drop-shadow(5px 5px 5px rgb(149, 149, 149));
 }
 
 .contenedor--destacado {
   border-radius: 3.3rem;
-  filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.801));
 }
 
-.sombra {
-  filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.252));
-}
-
-.img--xs {
+.img--xs, .pie__img {
   width: 2.2rem;
   height: 2.2rem;
 }
@@ -64,7 +75,7 @@ body {
   height: 10rem;
 }
 
-.img--lg {
+.img--lg, .galeria_animales__img, .wrapper__img__descripcion {
   width: 16rem;
   height: 16rem;
 }
@@ -77,6 +88,45 @@ body {
 .img--xxl {
   width: 25rem;
   height: 25rem;
+}
+
+.lista li {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  list-style: disc inside url("../img/vinietas/flecha.png");
+}
+
+.flex--center, .compras__carta, .indice_caracteristicas, .wrapper__img__descripcion, #nav .nav__logo, .flex--center--col, .header_index__texto, .pie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--center--col, .header_index__texto, .pie {
+  flex-direction: column;
+}
+
+.flex--justify_center, .galeria_animales__boton_paginas {
+  display: flex;
+  justify-content: center;
+}
+
+.flex--justify_around, .compras__contenedor, .galeria_animales, .filtro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex--justify_between, .galeria_animales__detalles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex--align_center--col, .galeria_animales__animal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titulo--xl {
@@ -94,6 +144,12 @@ body {
   width: 100%;
   background-color: #698a5c;
   padding-top: 5px;
+}
+
+.titulo--sm {
+  color: #466e35;
+  width: 100%;
+  font-weight: 600;
 }
 
 .texto--destacado {
@@ -125,7 +181,7 @@ p {
   font-size: 1.3rem;
 }
 
-.texto--sm {
+.texto--sm, .formulario__input {
   font-size: 1.2rem;
 }
 
@@ -186,7 +242,7 @@ a:hover {
   transition: 1000ms;
 }
 
-.transformacion--escalar:hover {
+.transformacion--escalar:hover, .galeria_animales__animal:hover {
   transform: scale(1.05);
   transition: all 0.8s;
 }
@@ -243,9 +299,6 @@ a:hover {
     transform: scale(1);
   }
 }
-#nav {
-  background-color: #466e35;
-}
 #nav .nav__logo {
   height: 8vh;
 }
@@ -281,13 +334,7 @@ a:hover {
   background-color: #466e35;
 }
 
-.pie {
-  background-color: #466e35;
-}
-
 .pie__img {
-  width: 2.2rem;
-  height: 2.2rem;
   border-radius: 100%;
   transition: all 0.5s;
 }
@@ -331,8 +378,6 @@ a:hover {
 }
 
 .wrapper__img__descripcion {
-  width: 16rem;
-  height: 16rem;
   color: #fff;
   position: absolute;
   top: 0;
@@ -352,7 +397,7 @@ a:hover {
 }
 
 .lista--tick {
-  list-style: disc inside url("../img/tick.png");
+  list-style: disc inside url("../img/vinietas/tick.png");
 }
 .lista--tick li {
   text-align: start;
@@ -360,8 +405,8 @@ a:hover {
 }
 
 .filtro {
+  flex-wrap: wrap;
   grid-area: filtros;
-  border-bottom: 2px solid #466e35;
 }
 
 .filtro__opciones {
@@ -425,14 +470,30 @@ a:hover {
   }
 }
 
+.compras__contenedor {
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .compras__contenedor {
+    border-left: 2px solid #466e35;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .compras__contenedor {
+    border-top: 2px solid #466e35;
+  }
+}
+
+.compras__carta {
+  border: 0.5px solid #466e35;
+  border-radius: 10px;
+  width: 18rem;
+}
+
 .formulario__input {
-  filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.251));
   border-radius: 0.5rem;
   border: 1px solid #466e35;
   width: 90%;
-}
-.formulario__input:focus {
-  background-color: #eaeaea;
 }
 @media screen and (min-width: 400px) {
   .formulario__input {

@@ -4,8 +4,9 @@
 }
 
 .wrapper__img__descripcion {
+    @extend .flex--center;
     //box model
-    @include size($imgLg);
+    @extend .img--lg;
     // font 
     color: #fff;
     // posicion
