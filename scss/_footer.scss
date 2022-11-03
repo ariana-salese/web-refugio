@@ -22,3 +22,17 @@
     font-weight: $textoBold;
     color: $colorTerciario;
 }
+
+.pie__aclaracion{
+    color: $colorSecundario;
+    font-size: $textoSm;
+}
+
+.pie__aclaracion__link{
+    color: $colorSecundario;
+    text-decoration: underline;
+
+    &:hover{
+        color:$colorTerciario;
+    }
+}

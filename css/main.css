@@ -48,7 +48,7 @@ body {
   border-bottom: 2px solid #466e35;
 }
 
-.sombra--dark, .compras__carta, .contenedor--destacado {
+.sombra--dark, .compras__carta, .galeria_animales__animal, .contenedor--destacado {
   filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.275));
 }
 
@@ -139,7 +139,7 @@ body {
   margin: 0;
 }
 
-.titulo {
+.titulo--md {
   color: #fff;
   width: 100%;
   background-color: #698a5c;
@@ -353,6 +353,19 @@ a:hover {
   color: #d5e0ce;
 }
 
+.pie__aclaracion {
+  color: #698a5c;
+  font-size: 1.2rem;
+}
+
+.pie__aclaracion__link {
+  color: #698a5c;
+  text-decoration: underline;
+}
+.pie__aclaracion__link:hover {
+  color: #d5e0ce;
+}
+
 .header_index {
   position: relative;
   background-image: url("../img/fondos/fondo_perro_acompaniado.jpg");
@@ -421,7 +434,6 @@ a:hover {
 .galeria_animales__animal {
   width: 18rem;
   border-radius: 10px;
-  filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.648));
   transition: scale 1s;
 }
 

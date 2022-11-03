@@ -30,9 +30,9 @@
     @extend .transformacion--escalar;
     @extend .bg--color_neutro;
     @extend .flex--align_center--col;
+    @extend .sombra--dark;
     width: 18rem;
     border-radius: 10px;
-    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.648));
     transition: scale 1s;
 }
 

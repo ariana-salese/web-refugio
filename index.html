@@ -81,12 +81,12 @@
 			<!-- inicia adopcion -->
 			<section id="carusel" data-bs-interval="5000" class="carousel slide" data-bs-ride="carousel">
 				<!-- titulo -->
-				<h2 class="titulo">¿Querés adoptar?</h2>
+				<h2 class="titulo--md">¿Querés adoptar?</h2>
 				<!-- carusel -->
 				<section class="carousel-inner" id="carusel">
 					<!-- slide 1 carusel -->
 				  	<article class="carousel-item active"> 
-						<div class="flex--center row">			<!-- TODO crear carusel__img? -->
+						<div class="flex--center row">
 							<img src="img/animales/thor.jpg" class="img--xl contenedor--destacado m-3 d-block col-lg-4" alt="foto thor">
 							<article class="col-lg-8 pe-xl-5">
 								<h3><strong>Thor</strong></h3> 
@@ -127,7 +127,7 @@
 						</div>
 				  	</article>
 				</section>
-				<!-- idicador de slide -->
+				<!-- indicador de slide -->
 				<div class="carousel-indicators carusel__indicadores m-0">
 					<button type="button" data-bs-target="#carusel" data-bs-slide-to="0" class="active carusel__indicador" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#carusel" data-bs-slide-to="1" class="carusel__indicador" aria-label="Slide 2"></button>
@@ -138,24 +138,24 @@
 			
 			<!-- inicia participacion -->
 			<section  class="flex--center--col">
-				<h2 class="titulo">¿Cómo participar?</h2>
-				<section class="py-3 row">
+				<h2 class="titulo--md">¿Cómo participar?</h2>
+				<section class="flex--justify_around py-3 flex-wrap">
 					<!-- transitar -->
-					<a href="participar.html#transitar" class="m-1 m-lg-4 col">
+					<a href="participar.html#transitar" class="p-1 p-lg-4">
 						<figure class="transformacion--escalar">
 							<img class="img--lg" src="img/ilustraciones/transitar_con_fondo_oscuro.svg" alt="Transitar">
 							<figcaption class="texto--md">Transitar</figcaption>
 						</figure>
 					</a>
 					<!-- ingresar mascota -->
-					<a href="participar.html#ingresar_mascota" class="m-1 m-lg-4 col">
+					<a href="participar.html#ingresar_mascota" class="p-1 p-lg-4">
 						<figure class="transformacion--escalar">
 							<img class="img--lg" src="img/ilustraciones/ingresar_mascota_con_fondo_oscuro.svg" alt="Ingresar mascota">
 							<figcaption class="texto--md">Ingresar mascota</figcaption>
 						</figure>
 					</a>
 					<!-- donar -->
-					<a href="participar.html#donar" class="m-1 m-lg-4 col">
+					<a href="participar.html#donar" class="p-1 p-lg-4">
 						<figure class="transformacion--escalar">
 							<img class="img--lg" src="img/ilustraciones/donar_con_fondo_oscuro.svg" alt="Donar">
 							<figcaption class="texto--md">Donar</figcaption>
@@ -170,22 +170,24 @@
 			<!-- termina participacion -->
 
 			<!-- inicia informate sobre castracion -->
-			<section class="bg--color_terciario flex--center row">
-				<h2 class="titulo col-12">Informate sobre la castración</h2>
-				<img class="img--xl col-12 col-lg-4" src="img/ilustraciones/abandono.svg" alt="Ilustracion perro abandonado">
-				<article class="flex--center px-5 col-12 col-lg-8">
-					<div class="col-12">
-						<p>
-							La castración es la única y mejor manera de mantener controlada
-							la población animal, además de ayudar a evitar problemas de salud a tu 
-							mascota.
-						</p>
-						<!-- boton -->
-						<form action="adoptar.html#castracion">
-							<input class="btn" type="submit" value="Conocé más">
-						</form>
-					</div>
-				</article>
+			<section  class="bg--color_terciario">
+				<h2 class="titulo--md">Informate sobre la castración</h2>
+				<div class="row flex--center">
+					<img class="img--xl col-12 col-lg-4" src="img/ilustraciones/abandono.svg" alt="Ilustracion perro abandonado">
+					<article class="flex--center col-12 col-lg-8">
+						<div>
+							<p>
+								La castración es la única y mejor manera de mantener controlada
+								la población animal, además de ayudar a evitar problemas de salud a tu 
+								mascota.
+							</p>
+							<!-- boton -->
+							<form action="adoptar.html#castracion">
+								<input class="btn" type="submit" value="Conocé más">
+							</form>
+						</div>
+					</article>
+				</div>
 			</section>
 			<!-- termina informate sobre castracion -->
 
@@ -214,6 +216,8 @@
 				</a>  
 			</section>
 			<a href="contacto.html" class="pie__link">Contacto</a>
+            <h4 class="pie__aclaracion">El refugio patitas no es real</h4>
+            <h4 class="pie__aclaracion">Trabajo final para el curso de Desarrollo Web de Coderhouse realizado por <a class="pie__aclaracion__link" href="https://github.com/ariana-salese/web-refugio">Ariana Salese</a></h4>
 		</footer>
 		<!-- termina footer -->
 
