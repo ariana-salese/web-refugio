@@ -1,6 +1,6 @@
 # Web Refugio Patitas
 
-Página web del Refugio Patitas, realizada para el curso Desarrollo Web de Coderhouse.
+Página web del Refugio Patitas, realizada para adentrarme al mundo web.
 
 ## Herramientas utilizadas
 
