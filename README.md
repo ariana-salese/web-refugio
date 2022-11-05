@@ -8,5 +8,5 @@ Página web del Refugio Patitas, realizada para el curso Desarrollo Web de Coder
 
 ## Links
 
-* [Github pages deployment](https://pages.github.com/)
+* [Github pages deployment](https://ariana-salese.github.io/web-refugio/)
 * [Server deployment](https://coder-refugio-patitas.netlify.app)
